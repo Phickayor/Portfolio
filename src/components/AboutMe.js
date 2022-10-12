@@ -1,11 +1,13 @@
 import React from "react";
-import profile from "./portTest.png";
+import profile from "../portTest.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 export default function AboutMe() {
+  const down = <FontAwesomeIcon icon={faArrowDown} />;
   return (
     <div>
       <div className="intro">
         <div className="aboutContainer">
-          <h1 className="head">About Me :</h1>
           <div className="text">
             <h1>Hi, I'm Olufikayomi.</h1>
             <h2>
@@ -31,6 +33,11 @@ export default function AboutMe() {
               <div>
                 <a href="my_cv" download>
                   <button>DOWNLOAD CV</button>
+                </a>
+              </div>
+              <div className="scrollArrow">
+                <a href="#projects" className="icon arrow">
+                  {down}
                 </a>
               </div>
             </div>
