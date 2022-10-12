@@ -100,6 +100,14 @@ button:hover {
 .icon {
   font-size: 30px;
 }
+@keyframes bounce {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 50%;
+  }
+}
 .scrollArrow {
   border-radius: 50%;
   width: 60px;
@@ -111,9 +119,14 @@ button:hover {
   text-align: center;
 }
 .arrow {
+  position: absolute;
   font-size: 50px;
   margin-top: 0;
+  right: 35%;
   color: white;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .allProjects {
   display: flex;
