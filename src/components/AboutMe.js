@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../portTest.png";
+import profile from "../portTest(2).jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 export default function AboutMe() {
