@@ -42,6 +42,7 @@ export default function Projects() {
     }
   ];
   const code = <FontAwesomeIcon icon={faCode} />;
+  const github = <FontAwesomeIcon icon="fa-brands fa-github" />;
   return (
     <div id="projects">
       <div className="head">
@@ -69,6 +70,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
+      <button className="icon">{github}</button>
     </div>
   );
 }
