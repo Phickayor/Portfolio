@@ -2,12 +2,13 @@ import React from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { fab, faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Projects() {
   const projects = [
     {
       name: "Currency Converter",
       description:
-        "This helps to convert all currencies used by different nations. Exchange rate is constantly updated",
+        "This helps to convert all currencies used by different nations. Exchange rate is constantly updated.",
       language: "HTML | CSS | JavaScript | API's",
       image: "../../projects/CurrencyConverter.png",
       link: "https://phickayor.github.io/Currency-Converter/",
@@ -16,7 +17,7 @@ export default function Projects() {
     {
       name: "Basic Arithmetic Calculator",
       description:
-        "This helps to solve your basic arithmetics easily so now u don't have to stress your brain",
+        "This helps to solve your basic arithmetics easily so now u don't have to stress your brain.",
       language: "HTML, CSS , JavaScript",
       image: "../../projects/Calculator.png",
       link: "https://phickayor.github.io/A-Simple-Web-Calculator/",
@@ -25,7 +26,7 @@ export default function Projects() {
     {
       name: "Weather App",
       description:
-        "This helps you check the current weather condition at a particular location anywhere in the world in the world",
+        "This helps you check the current weather condition at a particular location anywhere in the world in the world.",
       language: "HTML | CSS | JavaScript | API's",
       image: "../../projects/WeatherApp.png",
       link: "https://phickayor.github.io/Weather-App/",
@@ -34,7 +35,7 @@ export default function Projects() {
     {
       name: "To-Do List",
       description:
-        "This helps you to put down a list of things to do or items to purchase so u don't forget",
+        "This helps you to put down a list of things to do or items to purchase so u don't forget.",
       language: "HTML | CSS | JavaScript | Angular.Js",
       image: "../../projects/ToDoList.png",
       link: "https://phickayor.github.io/list-maker-web-app/",
@@ -42,7 +43,7 @@ export default function Projects() {
     }
   ];
   const code = <FontAwesomeIcon icon={faCode} />;
-  const github = <FontAwesomeIcon icon="fa-brands fa-github" />;
+  const github = <FontAwesomeIcon icon={faGithub} />;
   return (
     <div id="projects">
       <div className="head">
@@ -70,7 +71,14 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <button className="icon">{github}</button>
+      <div className="github">
+        <h3>
+          Check my github for more projects &nbsp;
+          <a href="https://github.com/phickayor" className="icon">
+            {github}
+          </a>
+        </h3>
+      </div>
     </div>
   );
 }

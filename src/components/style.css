@@ -80,14 +80,14 @@ h2 {
 .btn div {
   padding: 30px;
 }
-button {
+.btn div button {
   width: 200px;
   padding: 30px;
   background-color: #48bb78;
   border: 0;
   color: white;
 }
-button:hover {
+.btn div button:hover {
   color: rgb(156 163 175);
   background: #2d3748;
   cursor: pointer;
@@ -168,6 +168,22 @@ button:hover {
 }
 .projectDescription {
   color: rgb(156 163 175);
+}
+.github {
+  display: flex;
+  justify-content: center;
+}
+.github h3,
+a {
+  display: inline;
+  padding: 5px;
+  font-size: 20px;
+}
+.github h3 {
+  color: white;
+}
+a {
+  color: #48bb78;
 }
 @media screen and (max-width: 1143px) {
   .navBar {
