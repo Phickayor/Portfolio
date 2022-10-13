@@ -1,6 +1,5 @@
 hover effect on nav bar
 sidebar for smaller screen
 font-family
-font-icons
-project,skills and contact component
+skills and contact component
 map from embed.map
