@@ -2,4 +2,7 @@ hover effect on nav bar
 sidebar for smaller screen
 font-family
 skills and contact component
-map from embed.map
+
+Classes to adjust for responsiveness
+mapContainer
+form

@@ -18,7 +18,7 @@ export default function Projects() {
       name: "Basic Arithmetic Calculator",
       description:
         "This helps to solve your basic arithmetics easily so now u don't have to stress your brain.",
-      language: "HTML, CSS , JavaScript",
+      language: "HTML | CSS | JavaScript",
       image: "../../projects/Calculator.png",
       link: "https://phickayor.github.io/A-Simple-Web-Calculator/",
       key: 3
@@ -63,9 +63,9 @@ export default function Projects() {
             <a href={project.link} class="projectLink" key={project.key}>
               <img className="projectImage" src={project.image} alt="img"></img>
               <div className="projectText">
-                <h2 className="projectLanguage">{project.language}</h2>
-                <h1 className="projectName">{project.name}</h1>
-                <p className="projectDescription">{project.description}</p>
+                <div className="projectLanguage">{project.language}</div>
+                <div className="projectName">{project.name}</div>
+                <div className="projectDescription">{project.description}</div>
               </div>
             </a>
           </div>

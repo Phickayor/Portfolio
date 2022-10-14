@@ -95,7 +95,9 @@ h2 {
 .head {
   text-align: center;
 }
-#projects {
+#skills,
+#projects,
+#contact {
   padding-top: 150px;
 }
 .icon {
@@ -136,24 +138,23 @@ h2 {
 }
 .projectContainer {
   display: flex;
-  width: 500px;
+  width: 30%;
   height: 300px;
-  margin: 20px;
+  margin: 3%;
 }
 .projectImage {
   object-fit: cover;
   object-position: center;
-  width: 500px;
+  width: 30%;
   height: 300px;
   position: absolute;
 }
 .projectText {
   text-align: center;
-  padding: 15px;
   position: relative;
-  width: 500px;
-  height: 300px;
-  border: 2px solid rgb(31 41 55);
+  width: 100%;
+  height: 100%;
+  padding: 5px;
   background-color: rgb(31 41 55);
   opacity: 0;
 }
@@ -165,9 +166,12 @@ h2 {
 }
 .projectLanguage {
   color: #48bb78;
+  margin-bottom: 5%;
+  padding-top: 20px;
 }
 .projectName {
   color: white;
+  margin-bottom: 5%;
 }
 .projectDescription {
   color: rgb(156 163 175);
@@ -188,13 +192,38 @@ a {
 a {
   color: #48bb78;
 }
-#contact {
-  padding-top: 150px;
+.allStacks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.allStacks div {
+  padding: 10px;
+  width: 300px;
+  margin: 10px;
+  background-color: rgb(31 41 55);
+}
+.allStacks div:hover {
+  border: 2px solid #48bb78;
+}
+.check {
+  color: #48bb78;
+}
+.contactContainer {
+  display: flex;
+}
+.mapContainer {
+  padding: 30px;
+  width: 70%;
+}
+.map {
+  width: 100%;
+  height: 90%;
 }
 .form {
   padding: 30px;
   padding-top: 0;
-  width: 100%;
+  width: 30%;
 }
 .hireHead {
   color: white;
@@ -229,16 +258,25 @@ button {
   border-radius: 5px;
   border: none;
 }
+button:hover {
+  background-color: #2d3748;
+  color: white;
+  border: 2px solid #48bb78;
+}
 .contactIcons {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  background-color: #2d3748;
 }
 .contactIcons a {
   color: white;
   display: inline-block;
   padding: 10px;
   font-size: 30px;
+}
+.contactIcons a:hover {
+  color: #48bb78;
 }
 @media screen and (max-width: 1143px) {
   .navBar {
@@ -259,8 +297,41 @@ button {
   .scrollArrow {
     display: none;
   }
+  .contactContainer {
+    display: block;
+    align-items: center;
+  }
+  .form {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mapContainer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .map {
+    width: 100%;
+  }
+  .hireBtn button {
+    padding: 20px;
+  }
 }
-
+@media screen and (max-width: 658px) {
+  .allProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectContainer {
+    width: 70%;
+  }
+  .projectContainer img {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 536px) {
   .aboutContainer {
     display: flex;
