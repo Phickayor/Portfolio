@@ -12,7 +12,7 @@ function App() {
       {/* <AboutMe /> */}
       <Projects />
       <Skills />
-      {/* <Contact /> */}
+      <Contact />
     </main>
   );
 }

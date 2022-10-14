@@ -1,8 +1,7 @@
 hover effect on nav bar
 sidebar for smaller screen
 font-family
-skills and contact component
+Collecting form details
 
 Classes to adjust for responsiveness
-mapContainer
-form
+    aboutContainer
