@@ -41,9 +41,12 @@ h2 {
 .navBar a:hover {
   color: white;
 }
+#about {
+  padding-top: 120px;
+}
 .aboutContainer {
   width: 100%;
-  padding-top: 120px;
+  padding: 0;
 }
 .text {
   width: 50%;
@@ -67,7 +70,7 @@ h2 {
 }
 .image img {
   position: absolute;
-  margin-top: 5%;
+  margin-top: 3%;
   width: 40%;
   height: 600px;
   border-radius: 50%;
@@ -75,7 +78,8 @@ h2 {
 }
 .btn {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .btn div {
   padding: 30px;
@@ -339,16 +343,19 @@ button:hover {
 }
 @media screen and (max-width: 536px) {
   .aboutContainer {
+    padding-top: 60px;
     display: flex;
-    align-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    width: 100%;
   }
   .text,
   .image {
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+    padding: 0;
+    width: 100%;
   }
   .text {
     order: 1;
@@ -358,10 +365,10 @@ button:hover {
   }
   .image img {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    margin-top: 20%;
+    margin-top: 50%;
   }
   .btn {
     justify-content: center;

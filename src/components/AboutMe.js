@@ -5,7 +5,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 export default function AboutMe() {
   const down = <FontAwesomeIcon icon={faArrowDown} />;
   return (
-    <div>
+    <div id="about">
       <div className="intro">
         <div className="aboutContainer">
           <div className="text">

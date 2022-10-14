@@ -2,6 +2,3 @@ hover effect on nav bar
 sidebar for smaller screen
 font-family
 Collecting form details
-
-Classes to adjust for responsiveness
-    aboutContainer
