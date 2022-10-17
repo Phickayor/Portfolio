@@ -1,5 +1,5 @@
 import "./App.css";
-// import "./components/style.css";
+import "./components/style.css";
 import NavBar from "./components/navBar";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faContactBook } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -10,12 +10,26 @@ import {
 export default function Contact() {
   const code = <FontAwesomeIcon icon={faBriefcase} />;
   const contact = <FontAwesomeIcon icon={faContactBook} />;
+
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const submit = (e) => {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      body: JSON.stringify({ username, email, message })
+    });
+  };
+
   return (
     <div id="contact">
       <div className="head">
         <div className="icon">{contact}</div>
         <h1>Contact</h1>
       </div>
+
       <div className="contactContainer">
         <div className="mapContainer">
           <iframe
@@ -31,16 +45,31 @@ export default function Contact() {
             cumque error quaerat quia sapiente ipsam minus molestiae labore
             veritatis asperiores, assumenda iusto similique eaque.
           </p>
-
-          <label>Name</label>
-          <input type="text" />
-          <label>E-mail</label>
-          <input type="text" />
-          <label>Messages</label>
-          <textarea></textarea>
-          <div className="hireBtn">
-            <button>Submit</button>
-          </div>
+          <form action="/api" method="post" onSubmit={submit}>
+            <label htmlFor="username">Name</label>
+            <input
+              type="text"
+              name="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <label htmlFor="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label htmlFor="message">Messages</label>
+            <textarea
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <div className="hireBtn">
+              <button>Submit</button>
+            </div>
+          </form>
         </div>
       </div>
 
