@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
+@import url("https://fonts.googleapis.com/css?family=Nova+Mono");
 body {
   margin: 0;
   border: 0;
@@ -7,6 +11,10 @@ body {
 h1,
 h2 {
   color: white;
+  font-family: "Josefin Sans", cursive;
+}
+p {
+  font-family: "Nova Mono";
 }
 .navBarMain {
   margin-top: 0;
@@ -27,6 +35,7 @@ h2 {
   color: white;
   font-size: 30px;
   padding: 20px;
+  font-family: "Vollkorn SC";
 }
 .navBar a {
   font-size: 30px;
@@ -34,6 +43,7 @@ h2 {
   text-decoration: none;
   color: rgb(156 163 175);
   padding: 20px;
+  font-family: "Josefin Sans";
 }
 .navBar a:first-child {
   border-left: 2px solid #9ca3af;
@@ -125,6 +135,7 @@ h2 {
   padding: 30px;
 }
 .btn div button {
+  font-family: "Vollkorn SC";
   width: 200px;
   padding: 30px;
   background-color: #48bb78;
@@ -166,10 +177,10 @@ h2 {
   text-align: center;
 }
 .arrow {
-  position: absolute;
+  position: relative;
   font-size: 50px;
   margin-top: 0;
-  right: 35%;
+  margin-right: 5%;
   color: white;
   animation-name: bounce;
   animation-duration: 1s;
@@ -209,16 +220,20 @@ h2 {
   text-decoration: none;
 }
 .projectLanguage {
+  font-size: 20px;
   color: #48bb78;
   margin-bottom: 5%;
   padding-top: 20px;
+  font-family: "Vollkorn SC";
 }
 .projectName {
   color: white;
   margin-bottom: 5%;
+  font-family: "Nova Mono";
 }
 .projectDescription {
   color: rgb(156 163 175);
+  font-family: "Josefin sans";
 }
 .github {
   display: flex;
@@ -232,6 +247,7 @@ a {
 }
 .github h3 {
   color: white;
+  font-family: "Nova mono";
 }
 a {
   color: #48bb78;
@@ -249,6 +265,9 @@ a {
 }
 .allStacks div:hover {
   border: 2px solid #48bb78;
+}
+.allStacks div h3 {
+  font-family: "Nova mono";
 }
 .check {
   color: #48bb78;
@@ -270,8 +289,12 @@ a {
   padding-top: 0;
   width: 30%;
 }
+.form label {
+  font-family: "Josefin sans";
+}
 .hireHead {
   color: white;
+  font-family: "Josefin Sans", cursive;
   font-weight: 600;
 }
 input,
@@ -280,10 +303,12 @@ textarea {
   display: block;
   background-color: #2d3748;
   color: white;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: none;
+  font-family: "josefin sans";
+  font-size: 20px;
 }
 label {
   display: block;
@@ -296,7 +321,7 @@ label {
 button {
   margin-top: 5px;
   margin-left: 30px;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   background-color: #48bb78;
   color: white;
@@ -363,6 +388,21 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .mainForm {
+    width: 100%;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  label {
+    text-align: center;
+  }
+  .mainForm button {
+    margin-left: 0;
   }
   .mapContainer {
     padding: 0;

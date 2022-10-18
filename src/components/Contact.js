@@ -45,31 +45,33 @@ export default function Contact() {
             cumque error quaerat quia sapiente ipsam minus molestiae labore
             veritatis asperiores, assumenda iusto similique eaque.
           </p>
-          <form action="/api" method="post" onSubmit={submit}>
-            <label htmlFor="username">Name</label>
-            <input
-              type="text"
-              name="username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <label htmlFor="email">E-mail</label>
-            <input
-              type="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label htmlFor="message">Messages</label>
-            <textarea
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
-            <div className="hireBtn">
-              <button>Submit</button>
-            </div>
-          </form>
+          <div className="mainForm">
+            <form action="/api" method="post" onSubmit={submit}>
+              <label htmlFor="username">Name</label>
+              <input
+                type="text"
+                name="username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+              <label htmlFor="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <label htmlFor="message">Messages</label>
+              <textarea
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              ></textarea>
+              <div className="hireBtn">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 

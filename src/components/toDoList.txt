@@ -1,4 +1,3 @@
-hover effect on nav bar
-sidebar for smaller screen
-font-family
+onClick event on nav bar color:white
 Collecting form details
+Change lorem to actual text

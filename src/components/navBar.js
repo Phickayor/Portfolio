@@ -68,10 +68,18 @@ function NavBar() {
         <button className="sideMenuBtn" onClick={() => toggleSideBar()}>
           {sideBarBtn}
         </button>
-        <a href="#about">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" onClick={() => toggleSideBar()}>
+          Home
+        </a>
+        <a href="#projects" onClick={() => toggleSideBar()}>
+          Projects
+        </a>
+        <a href="#skills" onClick={() => toggleSideBar()}>
+          Skills
+        </a>
+        <a href="#contact" onClick={() => toggleSideBar()}>
+          Contact
+        </a>
       </div>
     </div>
   );
