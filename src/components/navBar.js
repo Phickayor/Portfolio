@@ -14,14 +14,34 @@ function NavBar() {
   //     sideBarValue: sideMenu
   //   };
   // }
-  // activeTab(e) {
-  //   e.target.activeColor = "white";
-  // }
+
   const sideMenu = <FontAwesomeIcon icon={faBars} />;
   const close = <FontAwesomeIcon icon={faX} />;
 
+  const [activeProject, setProject] = useState(false);
+  const [activeSkills, setSkills] = useState(false);
+  const [activeContact, setContact] = useState(false);
   const [sideBarWidth, setWidth] = useState("0px");
   const [sideBarBtn, setBtn] = useState(sideMenu);
+
+  // function hover(e) {
+  //   e.targetElement.style.color = "white";
+  // }
+  function projectButton() {
+    setProject(true);
+    setSkills(false);
+    setContact(false);
+  }
+  function skillsButton() {
+    setSkills(true);
+    setProject(false);
+    setContact(false);
+  }
+  function contactButton() {
+    setContact(true);
+    setProject(false);
+    setSkills(false);
+  }
   function toggleSideBar() {
     if (sideBarWidth === "0px") {
       setWidth("300px");
@@ -41,24 +61,24 @@ function NavBar() {
           <a
             href="#projects"
             className="projects"
-            // style={{ color: this.state.activeColor }}
-            // onClick={() => this.activeTab()}
+            style={{ color: activeProject ? "white" : "rgb(156 163 175)" }}
+            onClick={projectButton}
           >
             Projects
           </a>
           <a
             href="#skills"
             className="skills"
-            // style={{ color: this.state.activeColor }}
-            // onClick={() => this.activeTab()}
+            style={{ color: activeSkills ? "white" : "rgb(156 163 175)" }}
+            onClick={skillsButton}
           >
             Skills
           </a>
           <a
             href="#contact"
             className="contact"
-            // style={{ color: this.state.activeColor }}
-            // onClick={() => this.activeTab()}
+            style={{ color: activeContact ? "white" : "rgb(156 163 175)" }}
+            onClick={contactButton}
           >
             Contact
           </a>
