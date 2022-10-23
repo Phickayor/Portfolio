@@ -60,7 +60,7 @@ export default function Projects() {
       <div className="allProjects">
         {projects.map((project) => (
           <div className="projectContainer">
-            <a href={project.link} class="projectLink" key={project.key}>
+            <a href={project.link} className="projectLink" key={projects.key}>
               <img className="projectImage" src={project.image} alt="img"></img>
               <div className="projectText">
                 <div className="projectLanguage">{project.language}</div>

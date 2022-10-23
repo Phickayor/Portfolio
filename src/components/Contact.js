@@ -17,7 +17,7 @@ export default function Contact() {
 
   const submit = (e) => {
     e.preventDefault();
-    fetch("/", {
+    fetch("/api", {
       method: "POST",
       body: JSON.stringify({ username, email, message })
     });
@@ -46,7 +46,7 @@ export default function Contact() {
             veritatis asperiores, assumenda iusto similique eaque.
           </p>
           <div className="mainForm">
-            <form action="/api" method="post" onSubmit={submit}>
+            <form action="localhost:300/api" method="get" onSubmit={submit}>
               <label htmlFor="username">Name</label>
               <input
                 type="text"
@@ -75,7 +75,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div class="contactIcons">
+      <div className="contactIcons">
         <a href="https://github.com/Phickayor">
           <FontAwesomeIcon icon={faGithub} />
         </a>
