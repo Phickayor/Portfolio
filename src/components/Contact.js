@@ -17,9 +17,14 @@ export default function Contact() {
 
   const submit = (e) => {
     e.preventDefault();
-    fetch("/api", {
+    fetch("http://localhost:3001/api", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({ username, email, message })
+    }).catch((error) => {
+      alert(error);
     });
   };
 
@@ -50,6 +55,7 @@ export default function Contact() {
               <label htmlFor="username">Name</label>
               <input
                 type="text"
+                required
                 name="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -58,11 +64,13 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
+                required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <label htmlFor="message">Messages</label>
               <textarea
+                required
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
