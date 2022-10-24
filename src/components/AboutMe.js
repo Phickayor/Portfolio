@@ -4,6 +4,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 export default function AboutMe() {
   const down = <FontAwesomeIcon icon={faArrowDown} />;
+  const titles = ["Developer", "Web Designer", "Freelancer", "Student"];
+  var i = -1;
+  function titleChange() {
+    if (i < 3) {
+      i++;
+      var title = titles[i];
+      document.getElementById("title").innerHTML = title;
+    } else {
+      i = -1;
+    }
+  }
+  setInterval(titleChange, 5000);
   return (
     <div id="about">
       <div className="intro">
@@ -11,7 +23,7 @@ export default function AboutMe() {
           <div className="text">
             <h1>Hi, I'm Olufikayomi.</h1>
             <h2>
-              I am a <i>Front-end Developer</i>
+              I am a <i id="title"></i>
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum

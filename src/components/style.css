@@ -67,7 +67,7 @@ p {
 }
 .menu {
   position: fixed;
-  transition: 0.5s;
+  transition: 1.5s;
   height: 100%;
   top: 0;
   right: 0;
@@ -158,7 +158,7 @@ p {
 .icon {
   font-size: 30px;
 }
-@keyframes bounce {
+@keyframes arrowDance {
   from {
     top: 0%;
   }
@@ -182,7 +182,7 @@ p {
   margin-top: 0;
   margin-right: 5%;
   color: white;
-  animation-name: bounce;
+  animation-name: arrowDance;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
