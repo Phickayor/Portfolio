@@ -46,9 +46,8 @@ export default function Contact() {
         <div className="form">
           <div className="icon hireHead">{code} Hire Me</div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-            cumque error quaerat quia sapiente ipsam minus molestiae labore
-            veritatis asperiores, assumenda iusto similique eaque.
+            I hope my portfolio was able to convince you that I am indeed
+            perfect for the job at hand, if yes am just a mail away.
           </p>
           <div className="mainForm">
             <form action="localhost:300/api" method="get" onSubmit={submit}>

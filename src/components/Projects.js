@@ -50,11 +50,8 @@ export default function Projects() {
         <div className="icon">{code}</div>
         <h1>My Projects</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          pariatur rerum harum dolore velit eveniet, error, facilis cupiditate
-          <br />
-          repellat, ea voluptate. Reprehenderit molestiae impedit magnam aliquam
-          ex iste quidem magni!0
+          Through the cause of learning and developing myself, I have been able
+          to put together some projects. Here are some of them.
         </p>
       </div>
       <div className="allProjects">

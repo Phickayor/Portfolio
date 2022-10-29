@@ -26,15 +26,10 @@ export default function AboutMe() {
               I am a <i id="title"></i>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              suscipit et ratione, id nisi adipisci in laboriosam animi veniam
-              nam earum, officiis facere aliquid at voluptatibus cupiditate.
-              Dolores iure provident eaque explicabo tempore fugiat, numquam
-              eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              suscipit et ratione, id nisi adipisci in laboriosam animi veniam
-              nam earum, officiis facere aliquid at voluptatibus cupiditate.
-              Dolores iure provident eaque explicabo tempore fugiat, numquam
-              eos?
+              I am a developer with three (3) years of experience. I love coding
+              because it helps me see myself as a problem solver. It also brings
+              forth beautiful outcomes. I use my spare time to watch movies,
+              play mobile games, and chess.
             </p>
             <div className="btn">
               <div>
