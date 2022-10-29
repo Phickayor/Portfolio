@@ -237,7 +237,9 @@ p {
 }
 .github {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 .github h3,
 a {
