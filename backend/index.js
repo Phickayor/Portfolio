@@ -14,7 +14,7 @@ const cors = require("cors");
 //using cors
 app.use(
   cors({
-    origin: "http://localhost:3000", // restrict calls to those this address
+    origin: "https://olufikayomi-jetawo.netlify.app", // restrict calls to those this address
     methods: "POST" // only allow POST requests
   })
 );
