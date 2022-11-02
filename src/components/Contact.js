@@ -17,7 +17,7 @@ export default function Contact() {
 
   const submit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/api", {
+    fetch("https://olufikayomi-jetawo.netlify.app/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -50,7 +50,11 @@ export default function Contact() {
             perfect for the job at hand, if yes am just a mail away.
           </p>
           <div className="mainForm">
-            <form action="localhost:300/api" method="get" onSubmit={submit}>
+            <form
+              action="https://olufikayomi-jetawo.netlify.app/api"
+              method="get"
+              onSubmit={submit}
+            >
               <label htmlFor="username">Name</label>
               <input
                 type="text"
