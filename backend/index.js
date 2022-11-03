@@ -24,6 +24,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
 app.post("/api", (req, res) => {
+  // res.send("Fikayo");
   var userName = req.body.username;
   var userEmail = req.body.email;
   var userMessage = req.body.message;
@@ -58,13 +59,3 @@ app.post("/api", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
-
-// var http = require("http");
-
-// http
-//   .createServer(function (req, res) {
-//     res.writeHead(200, { "Content-Type": "text/html" });
-//     res.end("Hello World!");
-//     console.log("Server is now running");
-//   })
-//   .listen(3001);

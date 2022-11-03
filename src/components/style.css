@@ -380,6 +380,7 @@ button:hover {
   }
   .contactContainer {
     display: block;
+    text-align: center;
     align-items: center;
     margin: 12px;
   }
@@ -468,8 +469,7 @@ button:hover {
   }
   .image img {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 100%;
     border-radius: 50%;
     margin-top: 20%;
   }

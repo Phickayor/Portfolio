@@ -17,14 +17,14 @@ export default function Contact() {
 
   const submit = (e) => {
     e.preventDefault();
-    fetch("https://olufikayomi-jetawo.netlify.app/api", {
+    fetch("http://localhost:3001/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({ username, email, message })
     }).catch((error) => {
-      alert(error);
+      console.log(error);
     });
   };
 
@@ -50,11 +50,7 @@ export default function Contact() {
             perfect for the job at hand, if yes am just a mail away.
           </p>
           <div className="mainForm">
-            <form
-              action="https://olufikayomi-jetawo.netlify.app/api"
-              method="get"
-              onSubmit={submit}
-            >
+            <form onSubmit={submit}>
               <label htmlFor="username">Name</label>
               <input
                 type="text"

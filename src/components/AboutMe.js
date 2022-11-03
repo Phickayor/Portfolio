@@ -38,7 +38,10 @@ export default function AboutMe() {
                 </a>
               </div>
               <div>
-                <a href="my_cv" download>
+                <a
+                  href="https://docs.google.com/document/d/1cMzUxLzRE3-FSSRqwm0Xd4JJChp__JQYh8U_pvs78WA/edit?usp=share_link"
+                  download
+                >
                   <button>DOWNLOAD CV</button>
                 </a>
               </div>
