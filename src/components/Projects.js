@@ -15,12 +15,12 @@ export default function Projects() {
       key: 2
     },
     {
-      name: "Basic Arithmetic Calculator",
+      name: "Amen Jet",
       description:
-        "This helps to solve your basic arithmetics easily so now u don't have to stress your brain.",
-      language: "HTML | CSS | JavaScript",
-      image: "../../projects/Calculator.png",
-      link: "https://phickayor.github.io/A-Simple-Web-Calculator/",
+        "This website belongs to an organisation which renders medical services across the country with a long term goal of going global.",
+      language: "HTML | CSS | React Js | Tailwind",
+      image: "../../projects/Amenjet.png",
+      link: "https://amen-jet.netlify.app/",
       key: 3
     },
     {
@@ -33,12 +33,12 @@ export default function Projects() {
       key: 4
     },
     {
-      name: "To-Do List",
+      name: "Lyrics Finder",
       description:
-        "This helps you to put down a list of things to do or items to purchase so u don't forget.",
-      language: "HTML | CSS | JavaScript | Angular.Js",
-      image: "../../projects/ToDoList.png",
-      link: "https://phickayor.github.io/list-maker-web-app/",
+        "This helps you get the lyrics to any song of your choice",
+      language: "HTML | CSS | JavaScript",
+      image: "../../projects/LyricsFinder.png",
+      link: "https://fikayoslyricsfinder.netlify.app",
       key: 1
     }
   ];
@@ -53,6 +53,7 @@ export default function Projects() {
           Through the cause of learning and developing myself, I have been able
           to put together some projects. Here are some of them.
         </p>
+        <b>Click project to visit live site</b>
       </div>
       <div className="allProjects">
         {projects.map((project) => (
