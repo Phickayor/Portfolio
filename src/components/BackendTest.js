@@ -7,7 +7,7 @@ function BackendTest() {
 
   const submit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/api", {
+    fetch("https://trippayer.onrender.com/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

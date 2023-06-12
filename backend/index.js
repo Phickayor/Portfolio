@@ -23,29 +23,28 @@ app.use(
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
+var transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.MAIL_USERNAME,
+    pass: process.env.MAIL_PASSWORD
+  }
+});
+
 app.post("/api", (req, res) => {
   // res.send("Fikayo");
-  var userName = req.body.username;
-  var userEmail = req.body.email;
-  var userMessage = req.body.message;
-  // res.json({ message: "Fikayo", name: "sam" });
-  var transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      type: "OAuth2",
-      user: process.env.MAIL_USERNAME,
-      pass: process.env.MAIL_PASSWORD,
-      clientId: process.env.OAUTH_CLIENTID,
-      clientSecret: process.env.OAUTH_CLIENT_SECRET,
-      refreshToken: process.env.OAUTH_REFRESH_TOKEN
-    }
-  });
+  var info = {
+    userName: req.body.username,
+    userEmail: req.body.email,
+    userMessage: req.body.message
+  }
+
 
   var mailOptions = {
-    from: userEmail,
-    to: "jetawof@gmail.com",
-    subject: userName + " sending Email from Portfolio",
-    text: userMessage + "\n sent from " + userEmail
+    from: info.userEmail,
+    to: process.env.MAIL_USERNAME,
+    subject: "Email from my Portfolio",
+    text: info.userMessage + "\n sent from " + info.userEmail
   };
 
   transporter.sendMail(mailOptions, function (err, info) {
@@ -53,6 +52,7 @@ app.post("/api", (req, res) => {
       console.log(err);
     } else {
       console.log("Email sent: " + info.response);
+      res.send("success")
     }
   });
 });
