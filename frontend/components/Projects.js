@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -56,8 +55,8 @@ export default function Projects() {
         <b>Click project to visit live site</b>
       </div>
       <div className="allProjects">
-        {projects.map((project) => (
-          <div className="projectContainer">
+        {projects.map((project, index) => (
+          <div className="projectContainer" key={index}>
             <a href={project.link} className="projectLink" key={projects.key}>
               <img className="projectImage" src={project.image} alt="img"></img>
               <div className="projectText">

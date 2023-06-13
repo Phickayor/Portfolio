@@ -17,15 +17,25 @@ export default function Contact() {
 
   const submit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/api", {
+    fetch("https://portfolio-e18p.onrender.com/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({ username, email, message })
-    }).catch((error) => {
-      console.log(error);
-    });
+    }).then((res) => {
+      if (res.ok) {
+        alert("Your message has been delivered to Olufikayomi")
+      }
+      else {
+        alert("An error occured.Try again")
+      }
+    })
+
+      .catch((error) => {
+        alert("Something went wrong. Check your internet connection and try again")
+        console.log(error);
+      });
   };
 
   return (

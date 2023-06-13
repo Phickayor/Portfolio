@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrochip, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 export default function Skills() {
@@ -19,32 +18,32 @@ export default function Skills() {
       <div className="allStacks">
         <div className="languages">
           <h2>Languages</h2>
-          {languages.map((language) => (
-            <h3>
+          {languages.map((language, index) => (
+            <h3 key={index}>
               {checkMark} {language}
             </h3>
           ))}
         </div>
         <div className="frameworks">
           <h2>Frameworks</h2>
-          {frameworks.map((framework) => (
-            <h3>
+          {frameworks.map((framework, index) => (
+            <h3 key={index}>
               {checkMark} {framework}
             </h3>
           ))}
         </div>
         <div className="libraries">
           <h2>Libraries</h2>
-          {libraries.map((library) => (
-            <h3>
+          {libraries.map((library, index) => (
+            <h3 key={index}>
               {checkMark} {library}
             </h3>
           ))}
         </div>
         <div className="languages">
           <h2>Other Technologies</h2>
-          {others.map((technology) => (
-            <h3>
+          {others.map((technology, index) => (
+            <h3 key={index}>
               {checkMark} {technology}
             </h3>
           ))}
