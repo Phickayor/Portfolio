@@ -5,46 +5,17 @@ export default function AboutMe() {
   const down = <FontAwesomeIcon icon={faArrowDown} />;
   const titles = ["Developer", "Web Designer", "Freelancer", "Student"];
   return (
-    <div id="about">
-      <div className="intro">
-        <div className="aboutContainer">
-          <div className="text">
-            <h1>Hi, I'm Olufikayomi.</h1>
-            <h2>
-              I am a Frontend Developer
-            </h2>
-            <p>
-              I am a developer with three (3) years of experience. I love coding
-              because it helps me see myself as a problem solver. It also brings
-              forth beautiful outcomes. I use my spare time to watch movies,
-              play mobile games, and chess.
-            </p>
-            <div className="btn">
-              <div>
-                <a href="#contact">
-                  <button>HIRE ME</button>
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://docs.google.com/document/d/1cMzUxLzRE3-FSSRqwm0Xd4JJChp__JQYh8U_pvs78WA/edit?usp=share_link"
-                  download
-                >
-                  <button>DOWNLOAD CV</button>
-                </a>
-              </div>
-              <div className="scrollArrow">
-                <a href="#projects" className="icon arrow">
-                  {down}
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="image">
-            <img src="/port.jpg" alt="my pic"></img>
-          </div>
-        </div>
+    <div className="md:flex justify-between my-10">
+      <div className="flex flex-col justify-center space-y-5 py-10">
+        <img src="/wave.svg " className='w-fit' />
+        <p className="text-3xl">Hi  there 👋,</p>
+        <h1 className="text-5xl">I'm Olufikayomi Jetawo.</h1>
+        <p className="text-2xl md:text-3xl leading-10">A FullStack Developer, with four (4) years of experience passionate about building  beautiful, functional and user-friendly websites </p>
+        <button className='font-semibold duration-300 w-fit hover:bg-gradient hover:bg-[#121212] hover:scale-105 py-4 px-8 bg-purple-700 text-sm rounded-lg text-white'>Contact Me</button>
+
       </div>
+      <img src="/profile.svg" className="md:block hidden h-auto w-full object-cover rounded-xl" alt="Profile Pic" />
+
     </div>
   );
 }

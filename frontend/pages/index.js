@@ -18,9 +18,9 @@ export default function Home() {
     <div className={`${poppins.className}`}>
       <NavBar opacityHandler={setOpacityValue} />
 
-      <div className={`${opacityValue}`}>
-        {/*<AboutMe />
-      <Projects />
+      <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
+        <AboutMe />
+        {/*<Projects />
       <Skills />
       <Contact /> */}
       </div>
