@@ -1,106 +1,56 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState } from 'react'
 
-function NavBar() {
-  // Class Component Code
-  //constructor(props) {
-  //   super(props);
-  //   const sideMenu = <FontAwesomeIcon icon={faBars} />;
-  //   this.state = {
-  //     activeColor: "rgb(156 163 175)",
-  //     sideBarWidth: "0px",
-  //     sideBarValue: sideMenu
-  //   };
-  // }
+function NavBar(props) {
+  const hideNav = (() => {
+    setmenuBtn(bars)
+    setNav("h-0")
+    props.opacityHandler("opacity-100")
+  })
+  const showNav = (() => {
+    setmenuBtn(close)
+    setNav("h-fit")
+    props.opacityHandler("opacity-60")
 
-  const sideMenu = <FontAwesomeIcon icon={faBars} />;
-  const close = <FontAwesomeIcon icon={faX} />;
-
-  const [activeProject, setProject] = useState(false);
-  const [activeSkills, setSkills] = useState(false);
-  const [activeContact, setContact] = useState(false);
-  const [sideBarWidth, setWidth] = useState("0px");
-  const [sideBarBtn, setBtn] = useState(sideMenu);
-
-  // function hover(e) {
-  //   e.targetElement.style.color = "white";
-  // }
-  function projectButton() {
-    setProject(true);
-    setSkills(false);
-    setContact(false);
-  }
-  function skillsButton() {
-    setSkills(true);
-    setProject(false);
-    setContact(false);
-  }
-  function contactButton() {
-    setContact(true);
-    setProject(false);
-    setSkills(false);
-  }
-  function toggleSideBar() {
-    if (sideBarWidth === "0px") {
-      setWidth("300px");
-      setBtn(close);
-    } else {
-      setWidth("0px");
-      setBtn(sideMenu);
-    }
-  }
+  })
+  const [nav, setNav] = useState("h-0")
+  const bars = <FontAwesomeIcon icon={faBars} className='cursor-pointer text-extralight' onClick={showNav} />
+  const close = <FontAwesomeIcon icon={faClose} className='cursor-pointer text-extralight' onClick={hideNav} />
+  const [menuBtn, setmenuBtn] = useState(bars)
   return (
-    <div>
-      <div className="navBarMain">
-        <div className="name">
-          <h3>Olufikayomi Jetawo</h3>
+    <div className='my-4'>
+      {/* For Mobile */}
+      <div className="flex lg:hidden justify-between px-4 lg:px-5">
+        <div className='inline-flex gap-x-3 font-semibold text-xl items-center '>
+          {menuBtn}Olufikayomi
         </div>
-        <div className="navBar">
-          <a
-            href="#projects"
-            className="projects"
-            style={{ color: activeProject ? "white" : "rgb(156 163 175)" }}
-            onClick={projectButton}
-          >
-            Projects
-          </a>
-          <a
-            href="#skills"
-            className="skills"
-            style={{ color: activeSkills ? "white" : "rgb(156 163 175)" }}
-            onClick={skillsButton}
-          >
-            Skills
-          </a>
-          <a
-            href="#contact"
-            className="contact"
-            style={{ color: activeContact ? "white" : "rgb(156 163 175)" }}
-            onClick={contactButton}
-          >
-            Contact
-          </a>
-        </div>
+        <button className='font-semibold self-center bg-[#121212] hover:scale-105 px-5 py-2 text-sm rounded-lg text-white'>Contact Me</button>
       </div>
-      <div className="menu" style={{ width: sideBarWidth }}>
-        <button className="sideMenuBtn" onClick={() => toggleSideBar()}>
-          {sideBarBtn}
-        </button>
-        <a href="#about" onClick={() => toggleSideBar()}>
-          Home
-        </a>
-        <a href="#projects" onClick={() => toggleSideBar()}>
-          Projects
-        </a>
-        <a href="#skills" onClick={() => toggleSideBar()}>
-          Skills
-        </a>
-        <a href="#contact" onClick={() => toggleSideBar()}>
-          Contact
-        </a>
+      <nav className={`${nav} lg:hidden border-b-2 border-slate-700 bg-white absolute z-20 my-2 w-full font-medium overflow-hidden  duration-300 `} >
+        <ul className='my-3 space-y-2 text-xs px-5 text-slate-700 '>
+          <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>About Me</li>
+          <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Skills</li>
+          <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Works</li>
+          <li className='cursor-pointer duration-200 font-semibold border-t pt-2 hover:font-semibold hover:text-black'>Contact Me</li>
+        </ul>
+      </nav>
+
+      {/* For Desktop */}
+      <div className="lg:flex hidden justify-between px-4 lg:px-5">
+        <div className='inline-flex gap-x-3 font-semibold text-xl items-center '>
+          Olufikayomi Jetawo
+        </div>
+        <ul className='flex space-x-5 self-center text-md font-semibold'>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Works</li>
+          <li>Blogs</li>
+        </ul>
+        <button className='font-semibold self-center bg-[#121212] hover:scale-105 px-5 py-2 text-sm rounded-lg text-white'>Contact Me</button>
       </div>
     </div>
-  );
+  )
 }
-export default NavBar;
+
+export default NavBar
