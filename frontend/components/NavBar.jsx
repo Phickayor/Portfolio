@@ -19,13 +19,13 @@ function NavBar(props) {
     const close = <FontAwesomeIcon icon={faClose} className='cursor-pointer text-extralight' onClick={hideNav} />
     const [menuBtn, setmenuBtn] = useState(bars)
     return (
-        <div className='my-4'>
+        <div className='my-4 sticky top-4 z-20 '>
             {/* For Mobile */}
             <div className="flex lg:hidden justify-between px-4 lg:px-5">
                 <div className='inline-flex gap-x-3 font-semibold text-xl items-center '>
                     {menuBtn}Olufikayomi
                 </div>
-                <button className='font-semibold duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
+                <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
             </div>
             <nav className={`${nav} lg:hidden border-b-2 border-slate-700 bg-white absolute z-20 my-2 w-full font-medium overflow-hidden  duration-300 `} >
                 <ul className='my-3 space-y-2 text-xs px-5 text-slate-700 '>
@@ -47,7 +47,7 @@ function NavBar(props) {
                     <li>Works</li>
                     <li>Blog</li>
                 </ul>
-                <button className='font-semibold duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
+                <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
             </div>
         </div>
     )
