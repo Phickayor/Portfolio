@@ -22,9 +22,11 @@ export default function Home() {
       <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
         <Hero />
         <AboutMe />
-        {/*<Projects />
+        {/*
       <Skills />
-      <Contact /> */}
+        <Projects />
+      <Contact /> 
+      */}
       </div>
 
     </div>
