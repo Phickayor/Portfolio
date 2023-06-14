@@ -29,11 +29,18 @@ function NavBar(props) {
             </div>
             <nav className={`${nav} lg:hidden border-b-2 border-slate-700 bg-white absolute z-20 my-2 w-full font-medium overflow-hidden  duration-300 `} >
                 <ul className='my-3 space-y-2 text-xs px-5 text-slate-700 '>
-                    <a href="#about">
+                    <a href="#about" onClick={hideNav}>
                         <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>About Me</li>
                     </a>
-                    <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Skills</li>
-                    <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Works</li>
+                    <a href="#skills" onClick={hideNav}>
+                        <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Skills</li>
+                    </a>
+                    <a href='#services'>
+                        <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Services</li>
+                    </a>
+                    <a href="#works">
+                        <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Works</li>
+                    </a>
                     <li className='cursor-pointer duration-200 font-semibold border-t pt-2 hover:font-semibold hover:text-black'>Contact Me</li>
                 </ul>
             </nav>
@@ -44,12 +51,14 @@ function NavBar(props) {
                     Olufikayomi Jetawo
                 </div>
                 <ul className='flex space-x-5 self-center text-md font-semibold'>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Works</li>
-                    <li>Blog</li>
+                    <a href='#about'><li>About</li></a>
+                    <a href='#skills'><li>Skills</li></a>
+                    <a href="#services"><li>Services</li></a>
+                    <a href='#works'><li>Works</li></a>
                 </ul>
-                <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
+                <a href='#contact'>
+                    <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
+                </a>
             </div>
         </div>
     )

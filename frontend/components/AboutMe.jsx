@@ -10,7 +10,8 @@ function AboutMe() {
     })
     return (
         <div id="about">
-            <h1 className={`opacity-50 text-6xl  ${oswald.className}`}>ABOUT ME</h1>
+            <h1 data-aos="fade-left" data-aos-duration="1500"
+                className={`opacity-50 text-slate-500 text-6xl  ${oswald.className}`}>ABOUT ME</h1>
             <div className='flex flex-col md:flex-row justify-around gap-10 py-10'>
                 <img data-aos="fade-up" data-aos-duration="1500" src='/port.jpg' className='rounded-2xl self-center w-fit object-contain' />
                 <div data-aos="fade-up" data-aos-duration="1500"
