@@ -7,6 +7,7 @@ import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
+import Services from '@/components/Services'
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
@@ -22,8 +23,10 @@ export default function Home() {
       <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
         <Hero />
         <AboutMe />
+        <Skills />
+
         {/*
-      <Skills />
+        <Services />
         <Projects />
       <Contact /> 
       */}

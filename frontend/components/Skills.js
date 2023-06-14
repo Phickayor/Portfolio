@@ -1,52 +1,64 @@
-import React from "react";
+import { Oswald } from 'next/font/google'
+import React, { useEffect } from 'react'
+const oswald = Oswald({ weight: '700', subsets: ['latin'] })
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrochip, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 export default function Skills() {
   const languages = ["HTML", "CSS", "JavaScript"];
-  const frameworks = ["Tailwind", "W3CSS", "Express", "Nextjs"];
+  const frameworks = ["TailwindCSS", "W3CSS", "Express", "Nextjs"];
   const libraries = ["JQuery", "ReactJs"];
   const others = ["Git + Github", "Node.js"];
   const tech = <FontAwesomeIcon icon={faMicrochip} />;
-  const checkMark = <FontAwesomeIcon className="check" icon={faCheckCircle} />;
+  const checkMark = <FontAwesomeIcon className="text-green-500" icon={faCheckCircle} />;
   return (
-    <div id="skills">
-      <div className="head">
-        <div className="icon">{tech}</div>
-        <h1>My Stack</h1>
-      </div>
+    <div id="skills" className='py-5'>
+      <h1 className={`opacity-50 text-6xl text-right ${oswald.className}`}>{tech} MY STACK</h1>
+      <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10 '>
+        <div data-aos="fade-up" data-aos-duration="1500"
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
+          <h3 className='text-2xl font-semibold text-purple-700'>Languages</h3>
+          <ul className='space-y-2'>
+            {languages.map((language, index) => (
+              <li key={index}>
+                {checkMark} &nbsp;{language}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div data-aos="fade-down" data-aos-duration="1500"
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
 
-      <div className="allStacks">
-        <div className="languages">
-          <h2>Languages</h2>
-          {languages.map((language, index) => (
-            <h3 key={index}>
-              {checkMark} {language}
-            </h3>
-          ))}
+          <h3 className='text-2xl font-semibold text-purple-700'>Frameworks</h3>
+          <ul className='space-y-2'>
+            {frameworks.map((language, index) => (
+              <li key={index}>
+                {checkMark} &nbsp;{language}
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="frameworks">
-          <h2>Frameworks</h2>
-          {frameworks.map((framework, index) => (
-            <h3 key={index}>
-              {checkMark} {framework}
-            </h3>
-          ))}
+        <div data-aos="fade-up" data-aos-duration="1500"
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
+          <h3 className='text-2xl font-semibold text-purple-700'>Libraries</h3>
+          <ul className='space-y-2'>
+            {libraries.map((language, index) => (
+              <li key={index}>
+                {checkMark} &nbsp;{language}
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="libraries">
-          <h2>Libraries</h2>
-          {libraries.map((library, index) => (
-            <h3 key={index}>
-              {checkMark} {library}
-            </h3>
-          ))}
-        </div>
-        <div className="languages">
-          <h2>Other Technologies</h2>
-          {others.map((technology, index) => (
-            <h3 key={index}>
-              {checkMark} {technology}
-            </h3>
-          ))}
+        <div data-aos="fade-down" data-aos-duration="1500"
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
+          <h3 className='text-2xl font-semibold text-purple-700'>Other Technologies</h3>
+          <ul className='space-y-2'>
+            {others.map((other, index) => (
+              <li key={index}>
+                {checkMark} &nbsp;{other}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
