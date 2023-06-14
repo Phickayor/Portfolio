@@ -1,7 +1,8 @@
 import { Oswald } from 'next/font/google'
 import React, { useEffect } from 'react'
 const oswald = Oswald({ weight: '700', subsets: ['latin'] })
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrochip, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 export default function Skills() {
@@ -11,6 +12,9 @@ export default function Skills() {
   const others = ["Git + Github", "Node.js"];
   const tech = <FontAwesomeIcon icon={faMicrochip} />;
   const checkMark = <FontAwesomeIcon className="text-green-500" icon={faCheckCircle} />;
+  useEffect(() => {
+    Aos.init()
+  })
   return (
     <div id="skills" className='py-5'>
       <h1 data-aos="fade-right" data-aos-duration="1500"

@@ -44,7 +44,7 @@ function Services() {
                     <li onClick={handleService} className={`cursor-pointer px-4 py-3 rounded-xl ${appClass}`}>Web Applications</li>
                 </ul>
                 {/* MOBILE SERVICE HEADER  */}
-                <select onChange={handleService} className='flex lg:hidden outline-none text-purple-700 text-xl rounded-xl px-5  gap-4 font-semibold py-4 cursor-pointer bg-gray-300'>
+                <select onChange={handleService} className='flex lg:hidden outline-none text-purple-700 text-lg rounded-xl px-5  gap-4 font-semibold py-4 cursor-pointer bg-gray-300'>
                     <option className='text-black font-semibold hover:bg-purple-700'>Web Development</option>
                     <option className='text-black font-semibold hover:bg-purple-700'>Web Maintenance</option>
                     <option className='text-black font-semibold hover:bg-purple-700'>Web Applications</option>
