@@ -49,14 +49,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      {/* <div className="github">
-        <h3>
-          Check my github for more projects &nbsp;
-          <a href="https://github.com/phickayor" className="icon">
-            {github}
-          </a>
-        </h3>hover:
-      </div> */}
     </div>
   );
 }

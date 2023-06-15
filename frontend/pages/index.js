@@ -8,6 +8,7 @@ import Contact from '@/components/Contact'
 import NavBar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
@@ -27,7 +28,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </div>
-
+      <Footer />
     </div>
   )
 }

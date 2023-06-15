@@ -74,7 +74,7 @@ function Contact() {
   return (
     <div id="contact" className='py-2'>
       <h1 data-aos="fade-right" data-aos-duration="1500" className={`opacity-50 text-slate-500 text-6xl text-right ${oswald.className}`}>{contact} CONTACT</h1>
-      <div className='lg:flex my-10 gap-5'>
+      <div className='lg:flex mt-10 gap-5'>
         <div className=' px-5'>
           <h1 className='text-4xl lg:text-5xl font-semibold py-4 '>Get in touch with me</h1>
           <p>
