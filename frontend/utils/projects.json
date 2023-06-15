@@ -1,7 +1,7 @@
 [
     {
       "name": "Print Runner Clone",
-      "description":"Welcome to our Print Runner e-commerce site clone. Browse, shop, and experience a seamless online shopping journey. Find the perfect prints and products today!",
+      "description":"Welcome to our Print Runner e-commerce site clone. Browse, shop, and experience a seamless online shopping journey.",
       "language": "Next.Js | TailwindCSS",
       "image": "/projects/Printrunner.jpg",
       "livelink":"https://print-runner.vercel.app",
@@ -31,7 +31,7 @@
       "githublink": "https://github.com/Phickayor/workit"
     }, {
       "name": "Esquire Resorts",
-      "description":"Experience seamless hotel bookings and secure payments on our full-stack website. Reserve your stay hassle-free and pay with integrated Paystack. Book, stay, and enjoy!",
+      "description":"Experience seamless hotel bookings and secure payments on this website. Reserve your stay hassle-free and pay with integrated Paystack. Book, stay, and enjoy!",
       "language": "Next.Js | TailwindCSS | Node.js",
       "image": "/projects/Esquire.jpg",
       "livelink":"https://esquireresorts.com",
@@ -46,7 +46,7 @@
     },
     {
       "name": "Amen Jet",
-      "description":"Discover our comprehensive health services website, offering medical outreach, ambulance services, mobile nursing, and more. Connect with us for job opportunities or inquiries.",
+      "description":"Discover our comprehensive health services website, offering medical outreach, mobile nursing and more.",
       "language": "Next.Js | TailwindCSS | Node.js",
       "image": "/projects/Amenjet.jpg",
       "livelink":"https://amen-jet.netlify.app/",
@@ -62,7 +62,7 @@
     },
     {
       "name": "Weather App",
-      "description":"This Web Application helps you check the current weather condition at a particular location anywhere in the world in the world.",
+      "description":"This Web App helps you check the current weather condition at a particular location anywhere in the world in the world.",
       "language": "Next.Js | TailwindCSS | API's",
       "image": "/projects/WeatherApp.jpg",
       "livelink":"https://phickayor.github.io/Weather-App/",

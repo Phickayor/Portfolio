@@ -4,7 +4,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='bg-slate-500 py-2 text-white flex justify-center text-3xl gap-6'>
+        <div className='bg-slate-500 py-4 text-white flex justify-center text-3xl gap-6'>
             <a href="" className=' hover:text-purple-200   hover:scale-110 duration-300 '>
                 <FontAwesomeIcon icon={faGithub} />
             </a>
