@@ -1,0 +1,71 @@
+[
+    {
+      "name": "Print Runner Clone",
+      "description":"Welcome to our Print Runner e-commerce site clone. Browse, shop, and experience a seamless online shopping journey. Find the perfect prints and products today!",
+      "language": "Next.Js | TailwindCSS",
+      "image": "/projects/Printrunner.jpg",
+      "livelink":"https://print-runner.vercel.app",
+      "githublink": "https://github.com/Phickayor/PrintRunner"
+    },
+    {
+      "name": "My Portfolio",
+      "description":"Explore my portfolio showcasing my skills and projects. Contact me using the form below for exciting job offers and collaborations.",
+      "language": "Next.Js | TailwindCSS | Node.js",
+      "image": "/projects/Portfolio.jpg",
+      "livelink":"https://olufikayomi-jetawo.netlify.app/",
+      "githublink": "https://github.com/Phickayor/Portfolio"
+    },
+    {
+      "name": "Trippayer",
+      "description":"Discover our company's rides, streamlined payment system, and connect with us through our convenient contact form. Ride, pay, and reach us effortlessly!",
+      "language": "Next.Js | TailwindCSS | Node.js",
+      "image": "/projects/Trippayer.jpg",
+      "livelink":"https://trippayer.com",
+      "githublink": "https://github.com/Phickayor/wemfund"
+    },{
+      "name": "Work It!",
+      "description":"Get ready for a revolutionary fitness web application! Stay tuned as we bring you personalized accounts to kickstart your fitness journey. Stay fit, stay motivated!",
+      "language": "Next.Js | TailwindCSS | Node.js",
+      "image": "/projects/WorkIt.jpg",
+      "livelink":"https://workitt.netlify.app",
+      "githublink": "https://github.com/Phickayor/workit"
+    }, {
+      "name": "Esquire Resorts",
+      "description":"Experience seamless hotel bookings and secure payments on our full-stack website. Reserve your stay hassle-free and pay with integrated Paystack. Book, stay, and enjoy!",
+      "language": "Next.Js | TailwindCSS | Node.js",
+      "image": "/projects/Esquire.jpg",
+      "livelink":"https://esquireresorts.com",
+      "githublink": "https://github.com/Phickayor/Esquire-Resorts"
+    }, {
+      "name": "Currency Hub",
+      "description":"Effortlessly convert global currencies with real-time rates. Make informed financial decisions using our user-friendly web app!",
+      "language": "Next.Js | TailwindCSS | API's",
+      "image": "/projects/CurrencyHub.jpg",
+      "livelink":"https://currency-hub.netlify.app",
+      "githublink": "https://github.com/Phickayor/currency-hub"
+    },
+    {
+      "name": "Amen Jet",
+      "description":"Discover our comprehensive health services website, offering medical outreach, ambulance services, mobile nursing, and more. Connect with us for job opportunities or inquiries.",
+      "language": "Next.Js | TailwindCSS | Node.js",
+      "image": "/projects/Amenjet.jpg",
+      "livelink":"https://amen-jet.netlify.app/",
+      "githublink": "https://github.com/Phickayor/AmenJetRebuild"
+    },
+    {
+      "name": "Lyrics Finder",
+      "description":"Unlock the lyrics to any song of your choice on our website. Explore, sing along, and immerse yourself in the music!",
+      "language": "Next.Js | TailwindCSS | API's",
+      "image": "/projects/LyricsFinder.jpg",
+      "livelink":"https://fikayoslyricsfinder.netlify.app",
+      "githublink": "https://github.com/Phickayor/lyrics-finder"
+    },
+    {
+      "name": "Weather App",
+      "description":"This Web Application helps you check the current weather condition at a particular location anywhere in the world in the world.",
+      "language": "Next.Js | TailwindCSS | API's",
+      "image": "/projects/WeatherApp.jpg",
+      "livelink":"https://phickayor.github.io/Weather-App/",
+      "githublink": "https://github.com/Phickayor/Weather-App/"
+    }
+  ]

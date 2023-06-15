@@ -19,7 +19,7 @@ function NavBar(props) {
     const close = <FontAwesomeIcon icon={faClose} className='cursor-pointer text-extralight' onClick={hideNav} />
     const [menuBtn, setmenuBtn] = useState(bars)
     return (
-        <div className='py-4 bg-white sticky top-0 z-20 '>
+        <div className='py-4 bg-white sticky top-0 z-30'>
             {/* For Mobile */}
             <div className="flex lg:hidden justify-between px-4 lg:px-5">
                 <div className='inline-flex gap-x-3 font-semibold text-xl items-center '>
@@ -27,7 +27,7 @@ function NavBar(props) {
                 </div>
                 <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
             </div>
-            <nav className={`${nav} lg:hidden border-b-2 border-slate-700 bg-white absolute z-20 my-2 w-full font-medium overflow-hidden  duration-300 `} >
+            <nav className={`${nav} lg:hidden border-b-2 border-slate-700 bg-white absolute left-0 z-20 my-2 w-full font-medium overflow-hidden  duration-300 `} >
                 <ul className='my-3 space-y-2 text-xs px-5 text-slate-700 '>
                     <a href="#about" onClick={hideNav}>
                         <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>About Me</li>
@@ -35,10 +35,10 @@ function NavBar(props) {
                     <a href="#skills" onClick={hideNav}>
                         <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Skills</li>
                     </a>
-                    <a href='#services'>
+                    <a href='#services' onClick={hideNav}>
                         <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Services</li>
                     </a>
-                    <a href="#works">
+                    <a href="#works" onClick={hideNav}>
                         <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Works</li>
                     </a>
                     <li className='cursor-pointer duration-200 font-semibold border-t pt-2 hover:font-semibold hover:text-black'>Contact Me</li>

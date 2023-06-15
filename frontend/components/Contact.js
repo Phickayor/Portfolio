@@ -76,11 +76,9 @@ function Contact() {
       <h1 data-aos="fade-right" data-aos-duration="1500" className={`opacity-50 text-slate-500 text-6xl text-right ${oswald.className}`}>{contact} CONTACT</h1>
       <div className='lg:flex my-10 gap-5'>
         <div className=' px-5'>
-          <h1 className='text-4xl lg:text-5xl font-semibold py-2 '>Get in touch with me</h1>
+          <h1 className='text-4xl lg:text-5xl font-semibold py-4 '>Get in touch with me</h1>
           <p>
-            Leverage agile frameworks to provide a robust synopsis
-            for strategy foster collaborative
-            thinking to further the overall value.
+            Get in touch easily using the contact form. I'm here to assist you with any questions or project discussions. Let's connect!
           </p>
           <ul className='space-y-6 self-center my-6'>
 
@@ -109,11 +107,11 @@ function Contact() {
         </div>
         <form className='w-full my-10 px-5 space-y-8 '>
           <div className='flex space-x-5'>
-            <input type="text" placeholder="Your name*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
+            <input type="text" autoFocus={true} placeholder="Your name*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
             <input type="text" placeholder="Email*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
           </div>
           <div className='flex space-x-5'>
-            <input type="text" placeholder="Phone Number*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
+            <input type="text" placeholder="Phone No.*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
             <input type="text" placeholder="Subject*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
           </div>
           <textarea className='bg-inherit outline-purple-500 rounded-xl border px-5 p-4 w-full h-40' placeholder='Your Message*' />

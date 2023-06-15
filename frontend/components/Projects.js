@@ -1,81 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Oswald } from "next/font/google";
+import projects from "../utils/projects"
+const oswald = Oswald({ weight: "700", subsets: ['latin'] })
 export default function Projects() {
-  const projects = [
-    {
-      name: "Currency Converter",
-      description:
-        "This helps to convert all currencies used by different nations. Exchange rate is constantly updated.",
-      language: "HTML | CSS | JavaScript | API's",
-      image: "../../projects/CurrencyConverter.png",
-      link: "https://phickayor.github.io/Currency-Converter/",
-      key: 2
-    },
-    {
-      name: "Amen Jet",
-      description:
-        "This website belongs to an organisation which renders medical services across the country with a long term goal of going global.",
-      language: "HTML | CSS | React Js | Tailwind",
-      image: "../../projects/Amenjet.png",
-      link: "https://amen-jet.netlify.app/",
-      key: 3
-    },
-    {
-      name: "Weather App",
-      description:
-        "This helps you check the current weather condition at a particular location anywhere in the world in the world.",
-      language: "HTML | CSS | JavaScript | API's",
-      image: "../../projects/WeatherApp.png",
-      link: "https://phickayor.github.io/Weather-App/",
-      key: 4
-    },
-    {
-      name: "Lyrics Finder",
-      description:
-        "This helps you get the lyrics to any song of your choice",
-      language: "HTML | CSS | JavaScript",
-      image: "../../projects/LyricsFinder.png",
-      link: "https://fikayoslyricsfinder.netlify.app",
-      key: 1
-    }
-  ];
   const code = <FontAwesomeIcon icon={faCode} />;
   const github = <FontAwesomeIcon icon={faGithub} />;
+  const web = <FontAwesomeIcon icon={faGlobe} />
+  function AddDetails(e) {
+    // var targetDiv = e.target.previousElementSibling
+    // targetDiv.classList.add("w-full")
+    // console.log(targetDiv)
+
+  }
+  function RemoveDetails(e) {
+    // var targetDiv = e.target.previousElementSibling
+    // targetDiv.classList.add("w-0")
+    // console.log(targetDiv)
+  }
   return (
-    <div id="projects">
-      <div className="head">
-        <div className="icon">{code}</div>
-        <h1>My Projects</h1>
-        <p>
-          Through the cause of learning and developing myself, I have been able
-          to put together some projects. Here are some of them.
-        </p>
-        <b>Click project to visit live site</b>
-      </div>
-      <div className="allProjects">
+    <div id="works">
+      <h1 data-aos="fade-left" data-aos-duration="1500" className={`opacity-50 text-6xl text-slate-500 ${oswald.className}`}>{code} WORKS</h1>
+      <div className="hidden xl:flex -gap-4 py-20">
         {projects.map((project, index) => (
-          <div className="projectContainer" key={index}>
-            <a href={project.link} className="projectLink" key={projects.key}>
-              <img className="projectImage" src={project.image} alt="img"></img>
-              <div className="projectText">
-                <div className="projectLanguage">{project.language}</div>
-                <div className="projectName">{project.name}</div>
-                <div className="projectDescription">{project.description}</div>
+          <div
+            onMouseOver={AddDetails}
+            onMouseLeave={RemoveDetails}
+            className="h-72 w-56 hover:w-full hover:z-20 hover:grayscale-0 duration-[1.5s] grayscale "
+            key={index}>
+            <div className={`absolute text-white bg-slate-500 bg-opacity-40 z-30 opacity-0 hover:opacity-100 py-10 space-y-5 h-full w-full px-5 overflow-hidden`}>
+              <div className="space-y-2">
+                <h1 className="text-xl font-semibold">{project.name}</h1>
+                <p className="text-purple-900">{project.language}</p>
               </div>
-            </a>
+              <p>{project.description}</p>
+              <div className="my-5 flex justify-between">
+                <a href={project.githublink}>
+                  <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>{github} Source Code</button>
+                </a><a href={project.livelink}>
+                  <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>{web} Live Site</button>
+                </a>
+              </div>
+
+            </div>
+            <img src={project.image} className="w-full hover:mx-0 z-20  relative cursor-pointer h-full object-cover rounded-lg scale-110" />
           </div>
         ))}
       </div>
-      <div className="github">
+      {/* <div className="github">
         <h3>
           Check my github for more projects &nbsp;
           <a href="https://github.com/phickayor" className="icon">
             {github}
           </a>
-        </h3>
-      </div>
+        </h3>hover:
+      </div> */}
     </div>
   );
 }
