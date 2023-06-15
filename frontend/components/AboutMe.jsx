@@ -17,7 +17,9 @@ function AboutMe() {
                 <div data-aos="fade-up" data-aos-duration="1500"
                     className='self-center my-5 md:my-0 space-y-6'>
                     <h1 className='font-semibold text-2xl border-b-2 inline-block border-purple-700'>About</h1>
-                    <p className='md:text-md lg:text-lg '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut harum corporis fuga quos consequuntur molestiae nesciunt placeat sit, illo voluptate omnis, eaque quo illum in possimus voluptates odit reprehenderit iste!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe distinctio voluptatibus ad quasi earum fugit error nobis ea tenetur, assumenda aliquam officiis, repudiandae perspiciatis incidunt illum perferendis. Commodi, omnis deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, sed fugit, quo adipisci vitae quis at autem debitis quod eum eos eveniet ea dolorum reiciendis? Illo accusantium saepe odio impedit.</p>
+                    <p className='md:text-md lg:text-lg '>
+                        Hello there! 👋 I'm Olufikayomi Jetawo, a skilled developer experienced in frontend and backend technologies. ✨ I love crafting captivating user interfaces using React/Next.js, and building robust backend solutions with Node.js. When I'm not coding 💻, you'll likely find me indulging in the world of movies 🎬. Feel free to reach out for exciting projects or even a movie recommendation—I've got you covered! 🌟
+                    </p>
                 </div>
             </div>
         </div>

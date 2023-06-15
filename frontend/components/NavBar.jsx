@@ -25,7 +25,9 @@ function NavBar(props) {
                 <div className='inline-flex gap-x-3 font-semibold text-xl items-center '>
                     {menuBtn}Olufikayomi
                 </div>
-                <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
+                <a href='#contact'>
+                    <button className='font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>Contact Me</button>
+                </a>
             </div>
             <nav className={`${nav} lg:hidden border-b-2 border-slate-700 bg-white absolute left-0 z-20 my-2 w-full font-medium overflow-hidden  duration-300 `} >
                 <ul className='my-3 space-y-2 text-xs px-5 text-slate-700 '>
@@ -41,7 +43,9 @@ function NavBar(props) {
                     <a href="#works" onClick={hideNav}>
                         <li className='cursor-pointer hover:font-semibold hover:text-black duration-200'>Works</li>
                     </a>
-                    <li className='cursor-pointer duration-200 font-semibold border-t pt-2 hover:font-semibold hover:text-black'>Contact Me</li>
+                    <a href="#contact" onClick={hideNav}>
+                        <li className='cursor-pointer duration-200 font-semibold border-t pt-2 hover:font-semibold hover:text-black'>Contact Me</li>
+                    </a>
                 </ul>
             </nav>
 
