@@ -16,6 +16,8 @@ function Contact() {
   const nameContainer = useRef()
   const mailContainer = useRef()
   const messageContainer = useRef()
+  const numberContainer = useRef()
+  const subjectContainer = useRef()
   const phone = <FontAwesomeIcon icon={faPhone} className="text-white text-2xl p-4" />;
   const contact = <FontAwesomeIcon icon={faContactCard} className="self-center" />;
   const mail = <FontAwesomeIcon icon={faEnvelope} className="text-white text-2xl p-4" />;
@@ -37,12 +39,14 @@ function Contact() {
     var name = nameContainer.current.value
     var email = mailContainer.current.value
     var message = messageContainer.current.value
+    var number = numberContainer.current.value
+    var subject = subjectContainer.current.value
     fetch("https://portfolio-e18p.onrender.com/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ name, email, message })
+      body: JSON.stringify({ name, email, message, number, subject })
     }
     )
       .then(function (response) {
@@ -50,9 +54,11 @@ function Contact() {
       }
       ).then(function (data) {
         if (data.info === "success") {
-          nameContainer.current.value = " "
-          mailContainer.current.value = " "
-          messageContainer.current.value = " "
+          nameContainer.current.value = ""
+          mailContainer.current.value = ""
+          numberContainer.current.value = ""
+          subjectContainer.current.value = ""
+          messageContainer.current.value = ""
           alert(`Hey ${name}, your message has been delivered successfully`)
         } else {
           alert(`An error occured, check your internet connection`)
@@ -107,15 +113,15 @@ function Contact() {
         </div>
         <form className='w-full my-10 px-5 space-y-8 '>
           <div className='flex space-x-5'>
-            <input type="text" autoFocus={true} placeholder="Your name*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
-            <input type="text" placeholder="Email*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
+            <input ref={nameContainer} type="text" autoFocus={true} placeholder="Your name*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
+            <input ref={mailContainer} type="text" placeholder="Email*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
           </div>
           <div className='flex space-x-5'>
-            <input type="text" placeholder="Phone No.*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
-            <input type="text" placeholder="Subject*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
+            <input ref={numberContainer} type="text" placeholder="Phone No.*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
+            <input ref={subjectContainer} type="text" placeholder="Subject*" className='bg-inherit outline-purple-500 rounded-xl border px-5 p-3 w-1/2' />
           </div>
-          <textarea className='bg-inherit outline-purple-500 rounded-xl border px-5 p-4 w-full h-40' placeholder='Your Message*' />
-          <button className="px-10 py-4 hover:scale-105 text-white font-semibold bg-black duration-300 hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-violet-500 rounded-xl">Submit Message</button>
+          <textarea ref={messageContainer} className='bg-inherit outline-purple-500 rounded-xl border px-5 p-4 w-full h-40' placeholder='Your Message*' />
+          <button className="px-10 py-4 hover:scale-105 text-white font-semibold bg-black duration-300 hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-violet-500 rounded-xl">{load} Submit Message</button>
         </form>
       </div>
     </div>

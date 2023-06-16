@@ -36,15 +36,17 @@ app.post("/api", (req, res) => {
   var info = {
     userName: req.body.username,
     userEmail: req.body.email,
-    userMessage: req.body.message
+    userMessage: req.body.message,
+    userNumber: req.body.number,
+    subject: req.body.subject
   }
 
 
   var mailOptions = {
     from: info.userEmail,
     to: process.env.MAIL_USERNAME,
-    subject: "Email from my Portfolio",
-    text: info.userMessage + "\n sent from " + info.userEmail
+    subject: info.subject,
+    text: info.userMessage + "\n sent from " + info.userEmail + + userNumber + info.userName
   };
 
   transporter.sendMail(mailOptions, function (err, info) {
