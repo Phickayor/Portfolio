@@ -16,12 +16,12 @@ export default function Skills() {
     Aos.init()
   })
   return (
-    <div id="skills" className='py-5'>
+    <div id="skills" className='py-5 text-black'>
       <h1 data-aos="fade-right" data-aos-duration="1500"
         className={`opacity-50 text-slate-500 text-6xl text-right ${oswald.className}`}>{tech} MY STACK</h1>
       <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10 '>
         <div data-aos="fade-up" data-aos-duration="1500"
-          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-5 lg:space-y-10'>
           <h3 className='text-2xl font-semibold text-purple-700'>Languages</h3>
           <ul className='space-y-2'>
             {languages.map((language, index) => (
@@ -32,7 +32,7 @@ export default function Skills() {
           </ul>
         </div>
         <div data-aos="fade-down" data-aos-duration="1500"
-          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-5 lg:space-y-10'>
 
           <h3 className='text-2xl font-semibold text-purple-700'>Frameworks</h3>
           <ul className='space-y-2'>
@@ -44,7 +44,7 @@ export default function Skills() {
           </ul>
         </div>
         <div data-aos="fade-up" data-aos-duration="1500"
-          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-5 lg:space-y-10'>
           <h3 className='text-2xl font-semibold text-purple-700'>Libraries</h3>
           <ul className='space-y-2'>
             {libraries.map((language, index) => (
@@ -55,7 +55,7 @@ export default function Skills() {
           </ul>
         </div>
         <div data-aos="fade-down" data-aos-duration="1500"
-          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-10'>
+          className='text-lg border cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-50 border-purple-700 rounded-xl p-5 space-y-5 lg:space-y-10'>
           <h3 className='text-2xl font-semibold text-purple-700'>Other Technologies</h3>
           <ul className='space-y-2'>
             {others.map((other, index) => (

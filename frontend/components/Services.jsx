@@ -38,7 +38,7 @@ function Services() {
             <h1 data-aos="fade-left" data-aos-duration="1500"
                 className={`opacity-50 text-6xl text-slate-500 ${oswald.className}`}>WHAT I DO</h1>
             <div className='my-10'>
-                <ul className='hidden lg:flex text-xl rounded-xl px-10 gap-4 font-semibold py-4 w-fit bg-slate-300'>
+                <ul className='hidden lg:flex text-xl rounded-xl px-10 gap-4 font-semibold py-4 w-fit text-black bg-slate-300'>
                     <li onClick={handleService} className={`cursor-pointer px-4 py-3 rounded-xl ${devClass}`}>Web Development</li>
                     <li onClick={handleService} className={`cursor-pointer px-4 py-3 rounded-xl ${mainClass}`}>Web Maintenance</li>
                     <li onClick={handleService} className={`cursor-pointer px-4 py-3 rounded-xl ${appClass}`}>Web Applications</li>

@@ -14,12 +14,16 @@ const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 export default function Home() {
   const [opacityValue, setOpacity] = useState("opacity-100")
+  const [mode, setMode] = useState("bg-white")
   function setOpacityValue(value) {
     setOpacity(value)
   }
+  function setModeValue(value) {
+    setMode(value)
+  }
   return (
-    <div className={`${poppins.className} `}>
-      <NavBar opacityHandler={setOpacityValue} />
+    <div className={`${poppins.className} ${mode} `}>
+      <NavBar opacityHandler={setOpacityValue} modeHandler={setModeValue} />
       <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
         <Hero />
         <AboutMe />
