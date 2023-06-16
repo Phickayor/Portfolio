@@ -30,7 +30,7 @@ export default function Projects() {
             onMouseLeave={RemoveDetails}
             className="xl:h-72 h-56 md:h-auto xl:w-56 hover:w-full hover:z-20 hover:grayscale-0 duration-[1.5s] grayscale "
             key={index}>
-            <div className={`absolute text-white bg-slate-500 bg-opacity-40 z-30 opacity-0 hover:opacity-100 xl:py-10 py-5 space-y-2 xl:space-y-5 h-fit w-fit px-5 overflow-hidden`}>
+            <div className={`absolute left-0 text-white bg-slate-500 bg-opacity-40 z-30 opacity-0 hover:opacity-100 xl:py-10 py-5 space-y-2 xl:space-y-5 h-fit w-fit px-5 overflow-hidden`}>
               <div className="space-y-2">
                 <h1 className="xl:text-xl text-lg font-semibold">{project.name}</h1>
                 <p className="text-purple-900">{project.language}</p>
@@ -45,7 +45,7 @@ export default function Projects() {
               </div>
 
             </div>
-            <img src={project.image} className="w-full hover:mx-0 z-20  relative cursor-pointer h-full object-cover rounded-lg scale-110" />
+            <img src={project.image} className="w-full hover:mx-0 z-20  relative cursor-pointer h-full object-cover rounded-lg xl:scale-110" />
           </div>
         ))}
       </div>
