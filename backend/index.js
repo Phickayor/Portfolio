@@ -54,7 +54,7 @@ app.post("/api", (req, res) => {
       console.log(err);
     } else {
       console.log("Email sent: " + info.response);
-      res.send("success")
+      res.json({ info: "success" })
     }
   });
 });
