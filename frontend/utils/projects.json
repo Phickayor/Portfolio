@@ -20,16 +20,10 @@
       "description":"Discover our company's rides, streamlined payment system, and connect with us through our convenient contact form. Ride, pay, and reach us effortlessly!",
       "language": "Next.Js | TailwindCSS | Node.js",
       "image": "/projects/Trippayer.jpg",
-      "livelink":"https://trippayer.com",
-      "githublink": "https://github.com/Phickayor/wemfund"
-    },{
-      "name": "Work It!",
-      "description":"Get ready for a revolutionary fitness web application! Stay tuned as we bring you personalized accounts to kickstart your fitness journey. Stay fit, stay motivated!",
-      "language": "Next.Js | TailwindCSS | Node.js",
-      "image": "/projects/WorkIt.jpg",
-      "livelink":"https://workitt.netlify.app",
-      "githublink": "https://github.com/Phickayor/workit"
-    }, {
+      "livelink":"https://trippayer.netlify.app",
+      "githublink": "https://github.com/Phickayor/trippayer"
+    },
+    {
       "name": "Esquire Resorts",
       "description":"Experience seamless hotel bookings and secure payments on this website. Reserve your stay hassle-free and pay with integrated Paystack. Book, stay, and enjoy!",
       "language": "Next.Js | TailwindCSS | Node.js",
@@ -59,13 +53,5 @@
       "image": "/projects/LyricsFinder.jpg",
       "livelink":"https://fikayoslyricsfinder.netlify.app",
       "githublink": "https://github.com/Phickayor/lyrics-finder"
-    },
-    {
-      "name": "Weather App",
-      "description":"This Web App helps you check the current weather condition at a particular location anywhere in the world in the world.",
-      "language": "Next.Js | TailwindCSS | API's",
-      "image": "/projects/WeatherApp.jpg",
-      "livelink":"https://phickayor.github.io/Weather-App/",
-      "githublink": "https://github.com/Phickayor/Weather-App/"
     }
   ]
