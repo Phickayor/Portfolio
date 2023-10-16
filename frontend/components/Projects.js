@@ -47,12 +47,14 @@ export default function Projects() {
               <div className="flex space-x-5">
                 <a
                   href={project.githublink}
+                  target="_blank"
                   className="bg-white text-black p-2 rounded-xl font-semibold"
                 >
                   <button className="self-center">{github} Source Code</button>
                 </a>
                 <a
                   href={project.livelink}
+                  target="_blank"
                   className="bg-white text-black p-2 rounded-xl font-semibold"
                 >
                   <button className="self-center">{web} Live Site</button>
