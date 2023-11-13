@@ -106,7 +106,7 @@ function Contact() {
             <li className="flex space-x-2">
               <h1 className='rounded-full w-14 h-14 bg-[#273270]'>{countdown}</h1>
               <div>
-                Address <br /> 2, Phase 2 Osota Ijede, Ikorodu Lagos, Nigeria.
+                Address <br /> 2, Osota Ijede, Lagos, Nigeria.
               </div>
             </li>
           </ul>

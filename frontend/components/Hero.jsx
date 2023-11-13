@@ -1,17 +1,13 @@
-import React, { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 export default function Hero() {
-  const down = <FontAwesomeIcon icon={faArrowDown} />;
-  const titles = ["Developer", "Web Designer", "Freelancer", "Student"];
   return (
-    <div className="md:flex bg-opacity-20 justify-between my-10">
+    <div className="md:flex bg-opacity-20 justify-between my-10 lg:text-center">
       <div
         data-aos="fade-right"
         data-aos-duration="1500"
         className="flex flex-col justify-center space-y-5 py-10"
       >
-        <img src="/wave.svg " className="w-fit" />
+        <img src="/wave.svg " className="w-fit lg:mx-auto" />
         <p className="text-3xl">Hi there 👋,</p>
         <h1 className="text-5xl">
           I'm <b className="font-semibold text-purple-700">Olufikayomi</b>{" "}
