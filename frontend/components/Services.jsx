@@ -49,7 +49,7 @@ function Services() {
                     <option className='text-black font-semibold hover:bg-purple-700'>Web Maintenance</option>
                     <option className='text-black font-semibold hover:bg-purple-700'>Web Applications</option>
                 </select>
-                <div className='py-5 mx-2 lg:mx-4 text-lg font-semibold '>
+                <div className='py-5 mx-2 lg:mx-4 text-lg '>
                     {content == "Web Development" ?
                         (
                             <p data-aos="fade-down" data-aos-duration="1500">

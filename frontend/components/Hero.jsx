@@ -1,14 +1,9 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-// import Aos from "aos";
-// import 'aos/dist/aos.css'
 export default function Hero() {
   const down = <FontAwesomeIcon icon={faArrowDown} />;
   const titles = ["Developer", "Web Designer", "Freelancer", "Student"];
-  // useEffect(() => {
-  //   Aos.init()
-  // })
   return (
     <div className="md:flex bg-opacity-20 justify-between my-10">
       <div
@@ -32,13 +27,6 @@ export default function Hero() {
           </button>
         </a>
       </div>
-      <img
-        data-aos="fade-left"
-        data-aos-duration="1500"
-        src="/me.png"
-        className="md:block hidden h-auto w-full object-cover rounded-xl"
-        alt="Profile Pic"
-      />
     </div>
   );
 }

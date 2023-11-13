@@ -68,7 +68,7 @@ function NavBar(props) {
                 <div className='inline-flex gap-x-3 font-semibold text-xl items-center '>
                     Olufikayomi Jetawo
                 </div>
-                <ul className='flex space-x-5 self-center text-md font-semibold'>
+                <ul className='flex space-x-5 self-center text-md'>
                     <a href='#about' className='hover:text-purple-700 duration-300'><li>About</li></a>
                     <a href='#skills' className='hover:text-purple-700 duration-300'><li>Skills</li></a>
                     <a href="#services" className='hover:text-purple-700 duration-300'><li>Services</li></a>
