@@ -31,7 +31,13 @@ export default function Home() {
     setColor(color);
   }
   return (
-    <div className={`${poppins.className} bg-[${background}] text-[${color}]`}>
+    <div
+      className={`${poppins.className}`}
+      style={{
+        backgroundColor: background,
+        color: color
+      }}
+    >
       <NavBar opacityHandler={setOpacityValue} modeHandler={setModeValue} />
       <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
         <Hero />
