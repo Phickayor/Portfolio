@@ -101,7 +101,7 @@ function NavBar(props) {
             target="_blank"
             className="hover:text-purple-700 duration-300"
           >
-            <li>Blogs</li>
+            <li>Blog</li>
           </a>
           <a href="#contact" onClick={hideNav}>
             <li className="cursor-pointer duration-200 font-semibold border-t pt-2 hover:font-semibold hover:text-black">
@@ -134,7 +134,7 @@ function NavBar(props) {
             target="_blank"
             className="hover:text-purple-700 duration-300"
           >
-            <li>Blogs</li>
+            <li>Blog</li>
           </a>
         </ul>
         <div className="flex gap-4 ">
