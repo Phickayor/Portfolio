@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
@@ -15,18 +15,23 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; /* eslint-disable import/first */
 
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500"],
+  subsets: ["latin"]
+});
 export default function Home() {
   const [opacityValue, setOpacity] = useState("opacity-100");
-  const [mode, setMode] = useState("bg-[#111827] text-white");
+  const [background, setBackground] = useState("#131725");
+  const [color, setColor] = useState("#FFF");
   function setOpacityValue(value) {
     setOpacity(value);
   }
-  function setModeValue(value) {
-    setMode(value);
+  function setModeValue(bg, color) {
+    setBackground(bg);
+    setColor(color);
   }
   return (
-    <div className={`${poppins.className} ${mode} `}>
+    <div className={`${poppins.className} bg-[${background}] text-[${color}]`}>
       <NavBar opacityHandler={setOpacityValue} modeHandler={setModeValue} />
       <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
         <Hero />
@@ -34,9 +39,9 @@ export default function Home() {
         <Skills />
         <Services />
         <Projects />
-        <Contact />
+        <Contact background={color} color={background} />
       </div>
-      <Footer />
+      <Footer background={background} color={color} />
     </div>
   );
 }

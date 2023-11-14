@@ -8,14 +8,6 @@
     "githublink": "https://github.com/Phickayor/PrintRunner"
   },
   {
-    "name": "My Portfolio",
-    "description": "Explore my portfolio showcasing my skills and projects. Contact me using the form below for exciting job offers and collaborations.",
-    "language": "Next.Js | TailwindCSS | Node.js",
-    "image": "/projects/Portfolio.jpg",
-    "livelink": "https://olufikayomi-jetawo.netlify.app/",
-    "githublink": "https://github.com/Phickayor/Portfolio"
-  },
-  {
     "name": "Trippayer",
     "description": "Discover our company's rides, streamlined payment system, and connect with us through our convenient contact form. Ride, pay, and reach us effortlessly!",
     "language": "Next.Js | TailwindCSS | Node.js",

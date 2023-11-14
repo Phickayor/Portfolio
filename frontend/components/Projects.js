@@ -1,32 +1,14 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Oswald } from "next/font/google";
+import React from "react";
 import projects from "../utils/projects";
-const oswald = Oswald({ weight: "700", subsets: ["latin"] });
 export default function Projects() {
-  const code = <FontAwesomeIcon icon={faCode} />;
-  const github = <FontAwesomeIcon icon={faGithub} />;
-  const web = <FontAwesomeIcon icon={faGlobe} />;
-  function AddDetails(e) {
-    // var targetDiv = e.target.previousElementSibling
-    // targetDiv.classList.add("w-full")
-    // console.log(targetDiv)
-  }
-  function RemoveDetails(e) {
-    // var targetDiv = e.target.previousElementSibling
-    // targetDiv.classList.add("w-0")
-    // console.log(targetDiv)
-  }
   return (
     <div id="works">
       <h1
         data-aos="fade-left"
         data-aos-duration="1500"
-        className={`opacity-50 text-6xl text-slate-500 ${oswald.className}`}
+        className="text-5xl font-semibold"
       >
-        {code} WORKS
+        WORKS
       </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 my-10 gap-5">
         {projects.map((project, index) => (
@@ -34,7 +16,7 @@ export default function Projects() {
             data-aos="fade-up"
             data-aos-duration="1500"
             key={index}
-            className="bg-slate-900 shadow-white shadow-inner text-white rounded-3xl p-5 h-fit self-center"
+            className="bg-[#131725] shadow-white shadow-inner text-white rounded-3xl p-5 h-fit self-center"
           >
             <img
               src={project.image}
@@ -48,16 +30,16 @@ export default function Projects() {
                 <a
                   href={project.githublink}
                   target="_blank"
-                  className="bg-white text-black p-2 rounded-xl font-semibold"
+                  className="bg-white text-black p-2 rounded-xl font-medium"
                 >
-                  <button className="self-center">{github} Source Code</button>
+                  <button className="self-center">Source Code</button>
                 </a>
                 <a
                   href={project.livelink}
                   target="_blank"
-                  className="bg-white text-black p-2 rounded-xl font-semibold"
+                  className="bg-white text-black p-2 rounded-xl font-medium"
                 >
-                  <button className="self-center">{web} Live Site</button>
+                  <button className="self-center">Live Site</button>
                 </a>
               </div>
             </div>

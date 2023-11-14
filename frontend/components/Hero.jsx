@@ -9,11 +9,11 @@ export default function Hero() {
       >
         <img src="/wave.svg " className="w-fit lg:mx-auto" />
         <p className="text-3xl">Hi there 👋,</p>
-        <h1 className="text-5xl">
-          I'm <b className="font-semibold text-purple-700">Olufikayomi</b>{" "}
+        <h1 className="font-semibold text-5xl">
+          I'm <span className="text-purple-700">Olufikayomi </span>
           Jetawo.
         </h1>
-        <p className="text-2xl md:text-3xl  md:leading-10">
+        <p className="text-2xl md:text-3xl font-light md:leading-10">
           A Web Developer, with four (4) years of experience passionate about
           building beautiful, functional and user-friendly websites{" "}
         </p>

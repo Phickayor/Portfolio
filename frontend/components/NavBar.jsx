@@ -19,12 +19,12 @@ function NavBar(props) {
     props.opacityHandler("opacity-60");
   };
   const darkMode = () => {
-    props.modeHandler("bg-[#111827] text-white");
+    props.modeHandler("#131725", "#FFF");
     setActiveDark("bg-slate-900");
     setActiveLight("");
   };
   const lightMode = () => {
-    props.modeHandler("bg-white");
+    props.modeHandler("#FFF", "#131725");
     setActiveDark("");
     setActiveLight("bg-slate-900");
   };
@@ -142,7 +142,7 @@ function NavBar(props) {
             {dark} {light}
           </div>
           <a href="#contact">
-            <button className="font-semibold hover:bg-purple-700 duration-300 self-center bg-[#121212] hover:scale-105 px-5 py-3 text-sm rounded-lg text-white">
+            <button className="font-semibold hover:bg-purple-700 duration-300 self-center bg-gray-700 hover:scale-105 px-5 py-3 text-sm rounded-lg text-white">
               Contact Me
             </button>
           </a>
