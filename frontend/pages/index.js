@@ -18,7 +18,7 @@ config.autoAddCss = false; /* eslint-disable import/first */
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 export default function Home() {
   const [opacityValue, setOpacity] = useState("opacity-100");
-  const [mode, setMode] = useState("bg-white");
+  const [mode, setMode] = useState("bg-[#111827] text-white");
   function setOpacityValue(value) {
     setOpacity(value);
   }

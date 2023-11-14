@@ -29,8 +29,8 @@ function NavBar(props) {
     setActiveLight("bg-slate-900");
   };
   const [nav, setNav] = useState("h-0");
-  const [activeLight, setActiveLight] = useState("bg-slate-900");
-  const [activeDark, setActiveDark] = useState("");
+  const [activeLight, setActiveLight] = useState("");
+  const [activeDark, setActiveDark] = useState("bg-slate-900");
   const bars = (
     <FontAwesomeIcon
       icon={faBars}
@@ -74,7 +74,7 @@ function NavBar(props) {
       <nav
         className={`${nav} lg:hidden border-b-2 border-slate-700 bg-white absolute left-0 z-20 my-2 w-full font-medium overflow-hidden  duration-300 `}
       >
-        <ul className="my-3 space-y-2 text-xs px-5 text-slate-700 ">
+        <ul className=" [&>*]: text-xs p-5 text-slate-700 ">
           <a href="#about" onClick={hideNav}>
             <li className="cursor-pointer hover:font-semibold hover:text-black duration-200">
               About Me
@@ -94,6 +94,14 @@ function NavBar(props) {
             <li className="cursor-pointer hover:font-semibold hover:text-black duration-200">
               Works
             </li>
+          </a>
+          <a
+            href="https://phickayor.hashnode.dev"
+            onClick={hideNav}
+            target="_blank"
+            className="hover:text-purple-700 duration-300"
+          >
+            <li>Blogs</li>
           </a>
           <a href="#contact" onClick={hideNav}>
             <li className="cursor-pointer duration-200 font-semibold border-t pt-2 hover:font-semibold hover:text-black">
@@ -120,6 +128,13 @@ function NavBar(props) {
           </a>
           <a href="#works" className="hover:text-purple-700 duration-300">
             <li>Works</li>
+          </a>
+          <a
+            href="https://phickayor.hashnode.dev"
+            target="_blank"
+            className="hover:text-purple-700 duration-300"
+          >
+            <li>Blogs</li>
           </a>
         </ul>
         <div className="flex gap-4 ">
