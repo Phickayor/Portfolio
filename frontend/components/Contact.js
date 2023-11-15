@@ -190,7 +190,7 @@ function Contact(props) {
           />
           <button
             type="submit"
-            className={`bg-${props.color} hover:bg-purple-700 text-${props.background} hover:text-${props.color} duration-300  hover:scale-105 px-5 py-3 text-sm rounded-lg `}
+            className={`bg-gray-700 text-white hover:bg-purple-700 duration-300  hover:scale-105 px-5 py-3 text-sm rounded-lg `}
           >
             {load} Submit Message
           </button>
