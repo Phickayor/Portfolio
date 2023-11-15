@@ -21,8 +21,8 @@ const poppins = Poppins({
 });
 export default function Home() {
   const [opacityValue, setOpacity] = useState("opacity-100");
-  const [background, setBackground] = useState("#131725");
-  const [color, setColor] = useState("#FFF");
+  const [background, setBackground] = useState("darkgray");
+  const [color, setColor] = useState("white");
   function setOpacityValue(value) {
     setOpacity(value);
   }
@@ -31,13 +31,7 @@ export default function Home() {
     setColor(color);
   }
   return (
-    <div
-      className={`${poppins.className}`}
-      style={{
-        backgroundColor: background,
-        color: color
-      }}
-    >
+    <div className={`${poppins.className} bg-${background} text-${color}`}>
       <NavBar opacityHandler={setOpacityValue} modeHandler={setModeValue} />
       <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
         <Hero />
@@ -47,7 +41,7 @@ export default function Home() {
         <Projects />
         <Contact background={color} color={background} />
       </div>
-      <Footer background={background} color={color} />
+      <Footer />
     </div>
   );
 }

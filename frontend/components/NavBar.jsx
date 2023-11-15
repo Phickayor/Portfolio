@@ -19,12 +19,12 @@ function NavBar(props) {
     props.opacityHandler("opacity-60");
   };
   const darkMode = () => {
-    props.modeHandler("#131725", "#FFF");
+    props.modeHandler("darkgray", "white");
     setActiveDark("bg-slate-900");
     setActiveLight("");
   };
   const lightMode = () => {
-    props.modeHandler("#FFF", "#131725");
+    props.modeHandler("white", "darkgray");
     setActiveDark("");
     setActiveLight("bg-slate-900");
   };

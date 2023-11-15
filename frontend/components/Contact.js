@@ -111,8 +111,8 @@ function Contact(props) {
         CONTACT
       </h1>
       <div className="lg:flex mt-10 gap-5">
-        <div className="self-center px-5">
-          <h1 className="text-4xl lg:text-5xl font-medium py-4 ">
+        <div className="self-center lg:px-5">
+          <h1 className="text-3xl lg:text-5xl font-medium py-4 ">
             Get in touch with me
           </h1>
           <p>
@@ -146,7 +146,7 @@ function Contact(props) {
           </ul>
         </div>
         <form
-          className={`bg-[${props.background}] text-[${props.color}]  w-full p-10 rounded-xl space-y-6`}
+          className={`bg-${props.background} text-${props.color} lg:p-10 p-6 rounded-xl space-y-6`}
           onSubmit={HandleSubmit}
         >
           <div className="flex space-x-5">
@@ -156,14 +156,14 @@ function Contact(props) {
               autoFocus={true}
               required
               placeholder="Your name*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-[${props.color}] border px-5 p-3 w-1/2`}
+              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
             />
             <input
               ref={mailContainer}
               type="email"
               required
               placeholder="Email*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-[${props.color}] border px-5 p-3 w-1/2`}
+              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
             />
           </div>
           <div className="flex space-x-5">
@@ -172,25 +172,25 @@ function Contact(props) {
               type="tel"
               required
               placeholder="Phone No.*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-[${props.color}] border px-5 p-3 w-1/2`}
+              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
             />
             <input
               ref={subjectContainer}
               type="text"
               required
               placeholder="Subject*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-[${props.color}] border px-5 p-3 w-1/2`}
+              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
             />
           </div>
           <textarea
             ref={messageContainer}
             required
-            className={`bg-inherit focus:outline-purple-500 rounded-xl border-[${props.color}] border px-5 p-3 w-full h-40`}
+            className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-full lg:h-40`}
             placeholder="Your Message*"
           />
           <button
             type="submit"
-            className={`hover:bg-purple-700 duration-300 float-right bg-[${props.color}] hover:scale-105 px-5 py-3 text-sm rounded-lg text-[${props.background}] hover:text-[${props.color}]`}
+            className={`bg-${props.color} hover:bg-purple-700 text-${props.background} hover:text-${props.color} duration-300  hover:scale-105 px-5 py-3 text-sm rounded-lg `}
           >
             {load} Submit Message
           </button>

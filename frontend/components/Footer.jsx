@@ -7,11 +7,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-function Footer(props) {
+function Footer() {
   return (
-    <div
-      className={`${props.background} ${props.color} py-4 flex justify-center text-3xl gap-6`}
-    >
+    <div className=" py-4 flex justify-center text-3xl gap-6">
       <a
         href="https://github.com/Phickayor"
         className=" hover:text-purple-200 hover:scale-110 duration-300 "

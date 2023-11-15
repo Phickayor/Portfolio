@@ -22,7 +22,7 @@ export default function Skills(props) {
       <h1
         data-aos="fade-right"
         data-aos-duration="1500"
-        className={`text-[${props.color}] text-5xl font-semibold text-right`}
+        className={`text-${props.color} text-5xl font-semibold text-right`}
       >
         MY STACK
       </h1>

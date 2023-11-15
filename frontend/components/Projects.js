@@ -16,7 +16,7 @@ export default function Projects() {
             data-aos="fade-up"
             data-aos-duration="1500"
             key={index}
-            className="bg-[#131725] shadow-white shadow-inner text-white rounded-3xl p-5 h-fit self-center"
+            className="bg-darkgray shadow-white shadow-inner text-white rounded-3xl p-5 h-fit self-center"
           >
             <img
               src={project.image}
