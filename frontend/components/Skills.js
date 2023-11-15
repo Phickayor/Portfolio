@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrochip, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-export default function Skills() {
+export default function Skills(props) {
   const languages = ["HTML", "CSS", "JavaScript"];
   const frameworks = ["TailwindCSS", "W3CSS", "Express", "Nextjs"];
   const libraries = ["JQuery", "ReactJs"];
@@ -22,7 +22,7 @@ export default function Skills() {
       <h1
         data-aos="fade-right"
         data-aos-duration="1500"
-        className="text-5xl font-semibold text-right"
+        className={`text-[${props.color}] text-5xl font-semibold text-right`}
       >
         MY STACK
       </h1>

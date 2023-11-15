@@ -42,7 +42,7 @@ export default function Home() {
       <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
         <Hero />
         <AboutMe />
-        <Skills />
+        <Skills color={color} />
         <Services />
         <Projects />
         <Contact background={color} color={background} />

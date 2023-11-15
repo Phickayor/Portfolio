@@ -1,9 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Oswald } from "next/font/google";
 import React, { useEffect, useState } from "react";
-const oswald = Oswald({ weight: "700", subsets: ["latin"] });
-function Services() {
+function Services(props) {
   const [content, setContent] = useState("Web Development");
   const handleService = (e) => {
     var service = e.target.value;
@@ -46,11 +44,11 @@ function Services() {
         {/* MOBILE SERVICE HEADER  */}
         <select
           onChange={handleService}
-          className="flex lg:hidden outline-none text-lg rounded-xl px-5  gap-4 font-semibold py-4 cursor-pointer bg-purple-50"
+          className={`text-black flex lg:hidden outline-none text-lg rounded-xl px-5  gap-4 font-semibold py-3 cursor-pointer bg-purple-50`}
         >
-          <option className="text-black font-semibold">Web Development</option>
-          <option className="text-black font-semibold">Web Maintenance</option>
-          <option className="text-black font-semibold">Web Applications</option>
+          <option>Web Development</option>
+          <option >Web Maintenance</option>
+          <option>Web Applications</option>
         </select>
         <div className="py-5 mx-2 lg:mx-4 text-lg font-light">
           {content == "Web Development" ? (
