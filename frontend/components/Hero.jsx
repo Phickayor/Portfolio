@@ -18,7 +18,7 @@ export default function Hero() {
           building beautiful, functional and user-friendly websites{" "}
         </p>
         <a href="/Fullstack Resume.pdf" download>
-          <button className="font-semibold duration-300 w-fit hover:bg-gradient hover:bg-[#121212] hover:scale-105 py-4 px-8 bg-purple-700 text-sm rounded-lg text-white">
+          <button className="font-semibold duration-300 w-fit hover:bg-gradient hover:bg-gray-700 hover:scale-105 py-4 px-8 bg-purple-700 text-sm rounded-lg text-white">
             Download CV
           </button>
         </a>
