@@ -3,13 +3,6 @@ import projects from "../utils/projects";
 export default function Projects() {
   return (
     <div id="works">
-      <h1
-        data-aos="fade-left"
-        data-aos-duration="1500"
-        className="text-5xl font-semibold"
-      >
-        WORKS
-      </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 my-10 gap-5">
         {projects.map((project, index) => (
           <div

@@ -9,25 +9,34 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: url('/fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: "Megrim";
     src: url("/fonts/Megrim/Megrim-Regular.ttf") format("truetype");
     font-weight: normal;
   font-style: normal;
 }
 @font-face {
-    font-family: "Ocra";
-    src: url("/frontend/public/fonts/Ocra/Ocra.ttf") format("truetype");
+    font-family: "OCR A Std Regular";
+    src: url("/fonts/Ocra/OCR A Std Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 .font-ocra{
-    font-family: "Ocra",monospace;
+    font-family: "OCR A Std Regular",monospace;
 }
 .font-megrim{
     font-family: "Megrim",serif;
 }
-.font-poppins{
-    font-family: "Poppins",sans-serif;
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+.font-poppins-extralight {
+    font-family: "Poppins-ExtraLight", sans-serif;
 }
  body{
     @apply bg-background text-white bg-[url("/images/blurs/bg.png")] bg-cover;
