@@ -29,4 +29,6 @@
 .font-poppins{
     font-family: "Poppins",sans-serif;
 }
- 
+ body{
+    @apply bg-background text-white bg-[url("/images/blurs/bg.png")] bg-cover;
+ }

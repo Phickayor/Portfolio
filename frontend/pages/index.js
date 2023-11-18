@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Links from "@/components/Links";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const poppins = Poppins({
@@ -31,16 +32,17 @@ export default function Home() {
     setColor(color);
   }
   return (
-    <div className={`${poppins.className} bg-${background} text-${color}`}>
+    <div className="mx-auto lg:w-10/12 w-11/12 font-poppins">
       <NavBar opacityHandler={setOpacityValue} modeHandler={setModeValue} />
-      <div className={`mx-auto lg:w-10/12 w-11/12 ${opacityValue}`}>
+      <div>
         <Hero />
-        <AboutMe />
-        <Skills color={color} />
-        <Services />
-        <Projects />
-        <Contact background={color} color={background} />
+        <Links />
       </div>
+      <AboutMe />
+      <Skills color={color} />
+      <Services />
+      <Projects />
+      <Contact background={color} color={background} />
       <Footer />
     </div>
   );
