@@ -17,7 +17,7 @@ function Languages() {
     "sql"
   ];
   return (
-    <div className="bg-[url('/images/blurs/bg.png')] border-2 border-[#000AFF] bg-cover rounded-3xl mx-auto p-10 flex flex-wrap gap-6 justify-center">
+    <div className="bg-[url('/images/blurs/bg.png')] border-2 border-[#000AFF] mx-auto w-10/12 bg-cover rounded-3xl p-10 flex flex-wrap gap-6 justify-center">
       {langs.map((lang) => (
         <img src={`/images/icons/${lang}.png`} alt="lang" className="self-center"/>
       ))}

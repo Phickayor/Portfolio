@@ -110,7 +110,7 @@ function Contact(props) {
       >
         CONTACT
       </h1>
-      <div className="lg:flex mt-10 gap-5">
+      <div className="grid lg:grid-cols-2 mt-10 gap-5">
         <div className="self-center lg:px-5">
           <h1 className="text-3xl lg:text-5xl font-medium py-4 ">
             Get in touch with me
@@ -146,7 +146,7 @@ function Contact(props) {
           </ul>
         </div>
         <form
-          className={`bg-${props.background} text-${props.color} lg:p-10 p-6 rounded-xl space-y-6`}
+          className={`bg-white text-black lg:p-10 p-6 rounded-xl space-y-6`}
           onSubmit={HandleSubmit}
         >
           <div className="flex space-x-5">

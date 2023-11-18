@@ -21,16 +21,15 @@ export default function Home() {
     setColor(color);
   }
   return (
-    <div className="mx-auto lg:w-9/12 w-11/12 font-poppins space-y-20">
-      <NavBar opacityHandler={setOpacityValue} modeHandler={setModeValue} />
+    <div className="mx-auto lg:w-10/12 w-11/12 font-poppins space-y-20">
+      <NavBar />
       <div>
         <Hero />
         <Links />
       </div>
       <Stacks />
-      <Services />
       <Projects />
-      <Contact background={color} color={background} />
+      <Contact />
       <Footer />
     </div>
   );
