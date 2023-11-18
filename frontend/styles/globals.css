@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Megrim";
+    src: url("/fonts/Megrim/Megrim-Regular.ttf") format("truetype");
+    font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Ocra";
+    src: url("/frontend/public/fonts/Ocra/Ocra.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.font-ocra{
+    font-family: "Ocra",monospace;
+}
+.font-megrim{
+    font-family: "Megrim",serif;
+}
+.font-poppins{
+    font-family: "Poppins",sans-serif;
+}
+ 
