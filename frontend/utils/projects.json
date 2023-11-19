@@ -1,31 +1,31 @@
 [
   {
-    "description": "Experience love online! ToLoveForever Wedding Hub displays events, accepts virtual gifts, and ensures a joyous celebration.",
-    "image": "/projects/WeddingSite.png",
-    "livelink": "https://toloveforever.netlify.app/"
-  },
-  {
-    "description": "Sleek portfolio showcasing design prowess. Explore innovation visually!",
+    "description": "Sleek portfolio, showcasing design prowess. Explore innovation visually!",
     "image": "/projects/DesignersPortfolio.png",
     "livelink": "https://callmesanjo.netlify.app"
   },
   {
-    "description": "Seamless hotel bookings and secure payments. Reserve your stay hassle-free and pay with integrated Paystack. Book, stay, and enjoy!",
+    "description": "Online love hub. Displays events, accepts virtual gifts for joyous celebration.",
+    "image": "/projects/WeddingSite.png",
+    "livelink": "https://amen-jet.netlify.app/"
+  },
+  {
+    "description": "Seamless hotel bookings, secure payments. Reserve hassle-free. Book, stay, and enjoy!",
     "image": "/projects/Esquire.png",
     "livelink": "https://esquireresorts.com"
   },
   {
-    "description": "Welcome to our Print Runner e-commerce site clone. Browse, shop, and experience a seamless online shopping journey.",
+    "description": "Print Runner e-commerce clone. Browse, shop, seamless online shopping journey.",
     "image": "/projects/Printrunner.png",
     "livelink": "https://print-runner.vercel.app"
   },
   {
-    "description": "Discover company's rides, streamlined payment system, and connect with us through a convenient contact form. Ride, pay, and reach us effortlessly!",
+    "description": "Company's rides, streamlined payment system. Ride, pay, reach us effortlessly!",
     "image": "/projects/Trippayer.png",
     "livelink": "https://trippayer.netlify.app"
   },
   {
-    "description": "Unlock the lyrics to any song on our website. Explore, sing along, and immerse yourself in the music!",
+    "description": "Unlock lyrics on our website. Explore, sing along, immerse in music!",
     "image": "/projects/LyricsFinder.png",
     "livelink": "https://fikayoslyricsfinder.netlify.app"
   }
