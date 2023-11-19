@@ -30,13 +30,19 @@ function Languages() {
     "wordpress"
   ];
   return (
-    <div className="bg-[url('/images/blurs/bg.png')] border-2 border-[#000AFF] mx-auto w-11/12 bg-cover rounded-3xl p-4 md:p-10 flex flex-wrap gap-4 md:gap-6 justify-center">
-      {langs.map((lang, index) => (
+    <div className="bg-[url('/images/blurs/bg.png')] border-2 border-[#000AFF] mx-auto md:w-10/12 bg-cover rounded-3xl p-5 md:p-10 flex flex-wrap gap-4 md:gap-6 justify-center">
+      {langs.map((lang) => (
         <img
           src={`/images/icons/${lang}.png`}
           alt="lang"
-          className="self-center w-12 md:w-fit h-max block"
-          key={index}
+          className="self-center hidden md:block"
+        />
+      ))}
+      {mobilelangs.map((lang) => (
+        <img
+          src={`/images/icons/${lang}.png`}
+          alt="lang"
+          className="md:hidden self-center w-12 md:w-fit"
         />
       ))}
     </div>

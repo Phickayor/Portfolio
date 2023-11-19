@@ -20,11 +20,11 @@ export default function Projects() {
         >
           <img
             src={project.image}
-            className="mx-auto w-9/12 md:w-8/12 rounded-2xl object-cover self-center"
+            className="mx-auto w-10/12 md:w-8/12 rounded-2xl object-cover self-center"
           />
-          <h3 className="text-xl md:text-3xl mx-auto w-9/12">
+          <p className="text-xl md:text-3xl mx-auto md:w-9/12">
             {project.description}
-          </h3>
+          </p>
           <div className="flex justify-around">
             <img
               src="/images/icons/left.svg"
@@ -32,7 +32,7 @@ export default function Projects() {
             />
             <a
               href={project.livelink}
-              className="underline text-xl md:text-4xl font-semibold self-center"
+              className="underline sm:text-xl md:text-4xl font-semibold self-center"
             >
               VIEW PROJECT LIVE
             </a>
