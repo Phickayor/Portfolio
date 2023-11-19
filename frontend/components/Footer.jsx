@@ -1,6 +1,7 @@
 import React from "react";
 
 function Footer() {
+
   return (
     <div className=" py-5 flex justify-center [&>*]:scale-90 lg:gap-6">
       <a
@@ -10,7 +11,7 @@ function Footer() {
         <img
           src="/images/icons/Github.png"
           alt="github"
-          className="w-16 lg:w-fit"
+          className="w-14 md:w-16 xl:w-fit"
         />
       </a>
 
@@ -21,7 +22,7 @@ function Footer() {
         <img
           src="/images/icons/TwitterX.png"
           alt="twitter"
-          className="w-16 lg:w-fit"
+          className="w-14 md:w-16 xl:w-fit"
         />
       </a>
       <a
@@ -31,7 +32,7 @@ function Footer() {
         <img
           src="/images/icons/Instagram.png"
           alt="instagram"
-          className="w-16 lg:w-fit"
+          className="w-14 md:w-16 xl:w-fit"
         />
       </a>
       <a
@@ -41,7 +42,7 @@ function Footer() {
         <img
           src="/images/icons/Linkedin.png"
           alt="linkedin"
-          className="w-16 lg:w-fit"
+          className="w-14 md:w-16 xl:w-fit"
         />
       </a>
     </div>

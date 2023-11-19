@@ -1,29 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Footer from "@/components/Footer";
 import Links from "@/components/Links";
 import Stacks from "@/components/Stacks";
 
 export default function Home() {
-  const [opacityValue, setOpacity] = useState("opacity-100");
-  const [background, setBackground] = useState("darkgray");
-  const [color, setColor] = useState("white");
-  function setOpacityValue(value) {
-    setOpacity(value);
-  }
-  function setModeValue(bg, color) {
-    setBackground(bg);
-    setColor(color);
-  }
   return (
     <>
+      <NavBar />
       <div className="mx-auto w-10/12 space-y-10 md:space-y-20">
-        <NavBar />
         <div>
           <Hero />
           <Links />
@@ -32,7 +19,6 @@ export default function Home() {
         <Projects />
       </div>
       <Contact />
-      <Footer />
     </>
   );
 }

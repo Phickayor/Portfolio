@@ -35,6 +35,7 @@ function Languages() {
         <img
           src={`/images/icons/${lang}.png`}
           alt="lang"
+          key={lang}
           className="self-center hidden md:block"
         />
       ))}
@@ -42,6 +43,7 @@ function Languages() {
         <img
           src={`/images/icons/${lang}.png`}
           alt="lang"
+          key={lang}
           className="md:hidden self-center w-12 md:w-fit"
         />
       ))}

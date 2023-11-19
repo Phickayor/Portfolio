@@ -1,6 +1,6 @@
 const express = require("express");
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -12,52 +12,42 @@ var nodemailer = require("nodemailer");
 
 const cors = require("cors");
 //using cors
-app.use(
-  cors({
-    origin: ["https://olufikayomi-jetawo.netlify.app", "http://localhost:3000"], // restrict calls to those this address
-    methods: "POST" // only allow POST requests
-  })
-);
+app.use(cors());
+
 //using body-parsers
 // Body-parser middleware
-app.use(bodyparser.urlencoded({ extended: false }));
+// app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
 var transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: process.env.MAIL_USERNAME,
-    pass: process.env.MAIL_PASSWORD
+    pass: process.env.MAIL_PSWD
   }
 });
 
-app.post("/api", (req, res) => {
-  // res.send("Fikayo");
-  var info = {
-    userName: req.body.username,
-    userEmail: req.body.email,
-    userMessage: req.body.message,
-    userNumber: req.body.number,
-    subject: req.body.subject
-  }
-
+app.post("/contact", (req, res) => {
+  var { mail, message } = req.body;
 
   var mailOptions = {
-    from: info.userEmail,
+    from: mail,
     to: process.env.MAIL_USERNAME,
-    subject: info.subject,
-    text: info.userMessage + "\n sent from " + info.userEmail + + userNumber + info.userName
+    subject: "Message from Portfolio",
+    text: message
   };
 
   transporter.sendMail(mailOptions, function (err, info) {
     if (err) {
       console.log(err);
+      res.status(501).send("Couldn't send Mail");
     } else {
       console.log("Email sent: " + info.response);
-      res.json({ info: "success" })
+      res.status(200).send("Mail sent Successfully");
     }
   });
 });
+
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
