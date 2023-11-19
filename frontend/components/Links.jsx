@@ -8,7 +8,7 @@ function Links() {
     });
   };
   return (
-    <div className="flex flex-col md:flex-row justify-between [&>*]:py-5 text-xl lg:text-3xl [&>*]:border-2 [&>*]:border-dashed [&>*]:w-full gap-10 xl:gap-20 text-center">
+    <div className="flex mx-auto w-11/12 flex-col md:flex-row justify-between [&>*]:py-5 text-xl lg:text-3xl [&>*]:border-2 [&>*]:border-dashed [&>*]:w-full gap-10 xl:gap-20 text-center">
       <a
         href="https://linktr.ee/olufikayomi"
         target="_blank"

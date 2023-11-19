@@ -22,7 +22,7 @@ export default function Projects() {
             src={project.image}
             className="mx-auto w-10/12 md:w-8/12 rounded-2xl object-cover self-center"
           />
-          <p className="text-xl md:text-3xl mx-auto md:w-9/12">
+          <p className="text-xl md:text-3xl mx-auto w-11/12 md:w-9/12">
             {project.description}
           </p>
           <div className="flex justify-around">
