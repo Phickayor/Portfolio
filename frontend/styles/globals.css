@@ -7,52 +7,55 @@
 @import url("swiper/css/pagination");
 @import url("swiper/css/scrollbar");
 
-
 @font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Poppins-ExtraLight';
-    src: url('/fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Megrim";
-    src: url("/fonts/Megrim/Megrim-Regular.ttf") format("truetype");
-    font-weight: normal;
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-    font-family: "OCR A Std Regular";
-    src: url("/fonts/Ocra/OCR A Std Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Poppins-ExtraLight";
+  src: url("/fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'BIZ UDMincho';
-    src: url('/fonts/BIZ_UDMincho/BIZUDMincho-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Megrim";
+  src: url("/fonts/Megrim/Megrim-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.font-ocra{
-    font-family: "OCR A Std Regular",monospace;
+@font-face {
+  font-family: "OCR A Std Regular";
+  src: url("/fonts/Ocra/OCR A Std Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.font-megrim{
-    font-family: "Megrim",serif;
+@font-face {
+  font-family: "BIZ UDMincho";
+  src: url("/fonts/BIZ_UDMincho/BIZUDMincho-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-ocra {
+  font-family: "OCR A Std Regular", monospace;
+}
+.font-megrim {
+  font-family: "Megrim", serif;
 }
 .font-biz {
-    font-family: 'BIZ UDMincho', serif;
+  font-family: "BIZ UDMincho", serif;
 }
 .font-poppins {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .font-poppins-extralight {
-    font-family: "Poppins-ExtraLight", sans-serif;
+  font-family: "Poppins-ExtraLight", sans-serif;
 }
- body{
-    @apply bg-background text-white bg-[url("/images/blurs/bg.png")] bg-cover;
- }
+.dashed-border {
+  border-width: 2px;
+  border-style: dashed;
+}
+body {
+  @apply bg-background text-white bg-[url("/images/blurs/mobile-bg.png")] lg:bg-[url("/images/blurs/bg.png")] font-poppins bg-cover;
+}

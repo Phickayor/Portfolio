@@ -102,97 +102,30 @@ function Contact(props) {
   });
 
   return (
-    <div id="contact" className="py-2">
-      <h1
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        className="text-5xl font-semibold text-right"
-      >
-        CONTACT
-      </h1>
-      <div className="grid lg:grid-cols-2 mt-10 gap-5">
-        <div className="self-center lg:px-5">
-          <h1 className="text-3xl lg:text-5xl font-medium py-4 ">
-            Get in touch with me
-          </h1>
-          <p>
-            Get in touch easily using the contact form. I'm here to assist you
-            with any questions or project discussions. Let's connect!
-          </p>
-          <ul className="space-y-6 self-center my-6">
-            <li className="flex space-x-2">
-              <h1 className="rounded-full w-14 h-14 bg-[#273270]">{mail}</h1>
-              <div>
-                Email
-                <br />
-                jetawof@gmail.com
-              </div>
-            </li>
-            <li className="flex space-x-2">
-              <h1 className="rounded-full w-14 h-14 bg-[#273270]">{phone}</h1>
-              <div>
-                Call Us <br></br>
-                (+234) 703 104 1271
-              </div>
-            </li>
-            <li className="flex space-x-2">
-              <h1 className="rounded-full w-14 h-14 bg-[#273270]">
-                {countdown}
-              </h1>
-              <div>
-                Address <br /> 2, Osota Ijede, Lagos, Nigeria.
-              </div>
-            </li>
-          </ul>
-        </div>
-        <form
-          className={`bg-white text-black lg:p-10 p-6 rounded-xl space-y-6`}
-          onSubmit={HandleSubmit}
-        >
-          <div className="flex space-x-5">
-            <input
-              ref={nameContainer}
-              type="text"
-              autoFocus={true}
-              required
-              placeholder="Your name*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
-            />
-            <input
-              ref={mailContainer}
-              type="email"
-              required
-              placeholder="Email*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
-            />
-          </div>
-          <div className="flex space-x-5">
-            <input
-              ref={numberContainer}
-              type="tel"
-              required
-              placeholder="Phone No.*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
-            />
-            <input
-              ref={subjectContainer}
-              type="text"
-              required
-              placeholder="Subject*"
-              className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-1/2`}
-            />
-          </div>
-          <textarea
-            ref={messageContainer}
-            required
-            className={`bg-inherit focus:outline-purple-500 rounded-xl border-2 px-5 p-3 w-full lg:h-40`}
-            placeholder="Your Message*"
+    <div
+      id="contact"
+      className="bg-cover bg-[url('/images/blurs/mobile-contact.png')] lg:bg-[url('/images/blurs/contact.png')] pt-44 pb-16"
+    >
+      <div className=" mx-auto w-10/12 ">
+        <h1 className="border md:px-24 py-4 my-10 text-center mx-auto w-fit text-3xl lg:text-5xl xl:lg:text-6xl">
+          Let's talk
+        </h1>
+        <form className="flex font-poppins-extralight text-2xl lg:text-4xl flex-col gap-8 lg:gap-14 xl:gap-20 ">
+          <input
+            type="email"
+            placeholder="Email"
+            className="py-5 border-b-2 text-center placeholder:text-white focus:outline-none bg-inherit"
+          />
+          <input
+            type="text"
+            placeholder="Message"
+            className="py-5 border-b-2 text-center placeholder:text-white focus:outline-none bg-inherit"
           />
           <button
             type="submit"
-            className={`bg-gray-700 text-white hover:bg-purple-700 duration-300  hover:scale-105 px-5 py-3 text-sm rounded-lg `}
+            className="border font-poppins border-dashed px-24 md:my-0 my-6 py-4 text-center mx-auto w-fit dashed-border text-2xl lg:text-5xl xl:text-6xl"
           >
-            {load} Submit Message
+            Send
           </button>
         </form>
       </div>

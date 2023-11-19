@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Projects() {
   return (
     <Swiper
+      id="projects"
       spaceBetween={50}
       slidesPerView={1}
       onSwiper={(swiper) => console.log(swiper)}
@@ -31,9 +32,9 @@ export default function Projects() {
             />
             <a
               href={project.livelink}
-              className="underline text-md md:text-4xl font-semibold self-center"
+              className="underline text-xl md:text-4xl font-semibold self-center"
             >
-              LIVE PREVIEW
+              VIEW PROJECT LIVE
             </a>
             <img
               src="/images/icons/right.svg"

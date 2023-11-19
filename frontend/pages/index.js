@@ -21,16 +21,18 @@ export default function Home() {
     setColor(color);
   }
   return (
-    <div className="mx-auto lg:w-10/12 w-11/12 font-poppins space-y-20">
-      <NavBar />
-      <div>
-        <Hero />
-        <Links />
+    <>
+      <div className="mx-auto w-10/12 space-y-10 md:space-y-20">
+        <NavBar />
+        <div>
+          <Hero />
+          <Links />
+        </div>
+        <Stacks />
+        <Projects />
       </div>
-      <Stacks />
-      <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
