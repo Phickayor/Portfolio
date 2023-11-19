@@ -36,7 +36,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="bg-cover bg-[url('/images/blurs/mobile-contact.png')] lg:bg-[url('/images/blurs/contact.png')] pt-44 space-y-10"
+      className="bg-cover bg-[url('/images/blurs/mobile-contact.png')] lg:bg-[url('/images/blurs/contact.png')] pt-10 lg:pt-44 space-y-10"
     >
       <div className=" mx-auto w-10/12 ">
         <h1 className="border md:px-24 py-4 my-10 text-center mx-auto w-10/12 md:w-fit text-3xl lg:text-5xl xl:lg:text-6xl">
@@ -44,7 +44,7 @@ function Contact() {
         </h1>
         <form
           onSubmit={HandleSubmit}
-          className="flex font-poppins-extralight text-2xl lg:text-4xl flex-col gap-8 lg:gap-14 xl:gap-20 "
+          className="flex font-poppins-extralight text-2xl lg:text-4xl flex-col gap-4 lg:gap-14 xl:gap-20 "
         >
           <input
             type="email"
