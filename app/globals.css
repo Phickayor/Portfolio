@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SWT-Bold";
+  src: url("/fonts/stinger-wide-trial/StingerWideTrial-Bold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: "SWT-Regular";
+  src: url("/fonts/stinger-wide-trial/StingerWideTrial-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SWT-Light";
+  src: url("/fonts/stinger-wide-trial/StingerWideTrial-Light.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SWT-Thin";
+  src: url("/fonts/stinger-wide-trial/StingerWideTrial-Thin.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-swt {
+  font-family: "SWT-Regular", sans-serif;
+}
+.font-swt-bold {
+  font-family: "SWT-Bold", sans-serif;
+}
+.font-swt-light {
+  font-family: "SWT-Light", sans-serif;
+}
+.font-swt-thin {
+  font-family: "SWT-Thin", sans-serif;
+}
+body {
+  @apply bg-background text-white font-swt;
+}
